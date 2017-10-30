@@ -10,17 +10,6 @@ date: 2017-10-19
 
 2. Abschnitt 1 zu den Editionen muss noch einmal überarbeitet werden. Genaueres müssen wir besprechen. Es sollte noch ein Eintrag zum FRBR Modell hinzugefügt werden, sowie zum für die TEI relevanten Modell (siehe dazu z.B. Pierazzo 2014). Für einzelne Einträge möchte ich vorab folgendes Template vorschlagen  (die ähnlich wie kurze Folien gehalten werden können):
 
-~~~{.md}
-# Name des Eintrags
-
-- Wer?
-- Wo/ in welcher Institution?
-- In welchem/welchen Werk befasst er/sie sich mit dem Thema
-- Von wann stammen diese überlegungen?
-- wie sind wir auf ihn/sie aufmerksam geworden? 
-- warum ist das wichtig?
-- Was sind die Kernpunkte ihrer/seiner Konzeption von Edition?
-~~~
 
 # Über dieses Dokument (10. Oktober 2017)
 
@@ -34,11 +23,7 @@ In vielen Punkten werden die Ergebnisse einer Internet-Recherche präsentiert.
 
 Während in der deutschen Literatur stets der Begriff digitale **Editionen** verwendet wird, benutzt die englische Literatur digitale (**wissenschaftliche**) **Editionen**, sowie **elektronische Editionen** synonym.
 
-<!-- Frage: worin unterscheiden sich diese? -->
-
 Nachfolgend werden Definitionsversuche von Patrick Sahle, einem Angehörigen des *Center for eHumanities*, Brendan Duffy, einem *Digitisation Assistant* an der *Library National University of Ireland* und John Young, ein Author des *Committee on Scholarly Editions* vorgestellt. Es schien interessant diese drei Positionen nebeneinander zu stellen, da sie aus unterschiedlichen Institutionen stammen und zum Teil gegensätzlich sind.
-
-<!-- Möglicherweise lässt sich die Bedeutung dieser Positionen inhaltlich aus ihnen selbst heraus begründen  -->
 
 
 ### Deffinitionsversuch nach Patrick Sahle:
@@ -112,6 +97,11 @@ Unter *historische Dokumente* werden nicht nur historische Schriften, sondern eb
 - Aus dem Werk:
 	+ The Transition from classical to digital thinking (23. April 2009).[^rehbein_text]
 - Weitere Werke zu diesem Thema:
+	+ Burghart, Marjorie, and Malte Rehbein. ["The Present and Future of the TEI Community for Manuscript Encoding"](http://jtei.revues.org/372). Journal of the Text Encoding Initiative. 2 (2012).
+	+ Rehbein, Malte, and Ryder Sean. ["The TEI@Galway - Towards A Digital Scholarly Community in Ireland"](http://computerphilologie.tu-darmstadt.de/jg08/preface.html). Jahrbuch für Computerphilologie. 10 (2010): 7–10.
+	+ Rehbein, Malte. ["Vom Nutzen digitaler Editionen - das Göttinger kundige bok"](http://webdoc.gwdg.de/edoc/aw/buw/band/42/01Rehbein.pdf). Bibliothek und Wissenschaft. 42 (2009): 7–28.
+	+ Aumann, Stefan, Hans-Heinrich Ebeling, Hans-Reinhard Fricke, Peter Hoheisel, Malte Rehbein, and Manfred Thaller. ["From Digital Archive to Digital Edition"](http://hsr-trans.zhsf.uni-koeln.de/hsrretro/docs/artikel/hsr/hsr1999_477.pdf). Historical Social Research. 24 (1999): 101–145.
+	+  Alle Publikationen unter: <http://www.phil.uni-passau.de/dh/lehrstuhlteam/prof-dr-malte-rehbein/>
 - Was:
 	+ Das Editieren sei nach wie vor eine Transformation von einem Werk in ein anderes. Zwischen dem Manuskript und einer gedruckten oder elektronischen Version sei stets eine Lücke.
 	+ Wichtig: Übergang des statischen zum dynamischen und des Output-getriebenen zum Input- und User-getriebenen.
@@ -126,6 +116,7 @@ Unter *historische Dokumente* werden nicht nur historische Schriften, sondern eb
 - Aus dem Werk:
 	+ Digital Scholarly Editing: Theories, Models and Methods (2014)[^pierazzo_text]
 - Weitere Werke zu diesem Thema:
+	+ Digital Scholarly Editing: Theories and Practices (2015)[^pierazzo&driscoll]
 - Was:
 	+ In der Praxis des wissenschaftlichen Editierens finde ein großer struktureller und theoretischer Wandel aufgrund der Einsatzes von Computern statt.
 	+ Computer seien weitaus mehr als nur elektronische Rechercheassistenten, leiten zur Hinterfragung der Hermeneutik und Heuristik wissenschaftlicher Texte.
@@ -145,16 +136,46 @@ Unter *historische Dokumente* werden nicht nur historische Schriften, sondern eb
 	+ Paradigmenwandel von analog zu digital
 	+ Verunsichert einige Menschen (Relevanz dieser Aussage? So what?)
 
-<br>
-<br>
-<br>
-- wer:
-- wo (institution):
-- wo (texte, werk) etc.:
-- wie sind wir auf ihn/sie aufmerksam geworden? / warum ist das wichtig?:
-- was: 
-	+ Paradigmenwandel von analog zu digital
-	+ Verunsichert einige Menschen (Relevanz dieser Aussage? So what?)
+## Das FRBR Modell
+
+Das Bekannteste und einflussreichste Modell bibliografischer Katalogisierung wurde 1998 von Bibliotheken entworfen: *Functional Requirement of Bibliographic Records* - auch bekannt als **FRBR**.
+
+Das Konzept stützt sich auf Entitäten und Beziehungen zwischen den einzelnen Werke und bringt diese dadurch in Verbindung.
+
+Dabei wird zwischen zwei Entitäten-Gruppen unterschieden:
+
+- Entitäten für intellektuelle und künstliche Inhalte:
+
+	+ *work*
+	+ *expression*
+
+- Entitäten für physikalische Inhalte:
+
+	+ *manifestation*
+	+ *item*
+
+**Beispielhaftes Schema:**
+
+![Alt-Text](Schema_FRBR_Pierazzo.png)
+
+**Multiple Dimensionen:**
+
+![Alt-Text](Dimensionen_FRBR_Pierazzo.png)
+
+- Nutzen des FRBR:
+
+	+ Deklination des Modells zur Spezifizierung verschiedener Abstraktionslevel und zur Materialität/Immaterialität.
+	+ Versuch der Organisation verschiedener bibliografischer Konzepte in einem kohärenten und hierarchischen System.
+	+ Veranschaulichung der Entwicklung verschiedener konzeptueller Modelle durch verschiedener Sichtweisen und funktionalen Voraussetzungen.
+
+- Grenzen des FRBR:
+
+	+ Konzeptionelles Modell mit dem Ziel Bibliotheksbestände zu organisieren
+	+ Daher andere Ziele bezüglich textlicher, wissenschaftlicher Versuche für ordnende Prinzipien komplexer Realitäten der materiellen und immateriellen Objekte und Ideen.
+	+ Lösung: **FRBRoo Modell** (FRBR objektorientiert) mit fünfter Entität *Manifestation Singleton* für einzigartige Objekte wie Manuskripte, vorbereitende Skizzen und dem endgültigen Entwurf.
+ 
+## Das OHCO Modell
+
 
 
 #  2. Wichtige Institutionen, Lehrstühle, Zeitschriften, Blogs und Veranstaltungen im Bereich Digital Humanities
@@ -227,11 +248,12 @@ Nachfolgend wird der aktuelle technische und strukturelle Stand am Orient-Instit
 	- Bei PDF handelt es sich um ein proprietäres Format von Adobe.
 	- Das Format ist nicht ausreichend dokumentiert.
 	- Ein professionelles arbeiten mit diesem Format ist ohne den Erwerb von kostspieligen Lizenzen für die dazugehörigen Abode-Anwendungen nicht möglich.
-	- Das Format dient mehr zur präsentations Zwecken als zur Weiterverarbeitung von Dokumenten.
+	- Das Format dient mehr zu präsentations Zwecken als zur Weiterverarbeitung von Dokumenten.
 	- PDF-Dateien werden nicht sequenziell geladen und sind daher für webbasierte Anwendungen nicht geeignet.
 	- Gemeinsames arbeiten an einem Quelltext ist durch den stark eingeschränkten Bearbeitungsmodus nicht möglich.
 
 Siehe hierzu: Grallert, Till: Technische Aspekte, oder: the D in Digital Humanities (2015), URL: <http://www.sitzextase.de/blog/2015/02/23/workshop-editions-material/>
+
 ## Benötigte technische Grundsätze
 
 + Gute **Dokumentation** aller verwendeter Sprachen und Software.
@@ -299,7 +321,9 @@ Forschungsrat](https://www.bmbf.de/pub/Antragstellung_beim_ERC.pdf) veröffentli
 
 [^pierazzo_text]: Pierazzo, Elena: Digital Scholarly Editing: Theories, Models and Methods (2014), S. 7, URL: <http://hal.univ-grenoble-alpes.fr/hal-01182162>.
 
-[^metadaten]: DFG-Praxisregeln: Digitalisierung, Deutsche Forschungsgemeinschaft, S. 6, URL: <http://www.dfg.de/formulare/12_151/12_151_de.pdf> [abgerufen am 17.10.2017].
+[^pierazzo&driscoll]: Driscoll, Matthew James; Pierazzo, Elena: Digital Scholarly Editing Theories and Practices (2015), URL: <https://www.openbookpublishers.com/product.php/483?483>.
+
+[^metadaten]: DFG-Praxisregeln: Digitalisierung, Deutsche Forschungsgemeinschaft, S. 6, URL: <http://www.dfg.de/formulare/12_151/12_151_de.pdf> [abgerufen am 17.10.2017].; 
 
 [^formatsprachen]: Vgl. ebd. S. 8.
 
