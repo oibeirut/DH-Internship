@@ -8,7 +8,7 @@ date: 2017-10-19
 # To do:
 
 
-2. Es sollte noch ein Eintrag zum FRBR Modell hinzugefügt werden, sowie zum für die TEI relevanten Modell (siehe dazu z.B. Pierazzo 2014).
+1. Es sollte noch ein Eintrag zum FRBR Modell hinzugefügt werden, sowie zum für die TEI relevanten Modell (siehe dazu z.B. Pierazzo 2014).
 
 # Über dieses Dokument (10. Oktober 2017)
 
