@@ -26,6 +26,11 @@ Das Schema dient zur Definition der Struktur eines XML-Dokuments um die erlaubte
 - Verifikation erhaltender Daten von außerhalb bezüglich ihrer Validität
 - Verifikation eigener Daten bezüglich ihrer Validität
 
+### Nachteil:
+
+- Ältestes hier vorgestelltes Schema
+- Noch verbreitet, wird jedoch nicht mehr weiterentwickelt
+
 
 ## XML-Schema: XSD
 
@@ -56,6 +61,7 @@ Das Schema dient zur Definition der Struktur eines XML-Dokuments um die erlaubte
 - Mitführen der Beschreibung des eigenen Formates
 - Festlegen eines Standards für die gemeinsame Arbeit unabhängiger Gruppen an Daten
 - Verifikation von Daten
+- W3C-Standard -> sehr weit verbreitet
 
 
 ## RelaxNG
@@ -74,7 +80,7 @@ Das Schema dient zur Definition der Struktur eines XML-Dokuments um die erlaubte
 - Uneingeschränkte Unterstützung gemischter Inhalte
 - Solide theoretische Basis
 - Ist mit einer separaten Datentypen Sprache vereinbar wie beispielsweise W3C XML Schema Datatypes 
-
+- ISO Standard, leider nicht so sehr verbreitet wie XML Schema
 
 ## Schematron
 
@@ -104,6 +110,7 @@ Das Schema dient zur Definition der Struktur eines XML-Dokuments um die erlaubte
 - [w3school Schema Tutorial](https://www.w3schools.com/xml/schema_intro.asp)
 - [RelaxNG](http://relaxng.org/)
 - [Schematron](http://schematron.com/)
+- [video2brain](https://www.video2brain.com/de/tutorial/dtd-schema-und-relaxng)
 
 
 # Wie werden Schemata generiert?

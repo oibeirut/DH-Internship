@@ -7,20 +7,8 @@ date: 2017-10-19
 
 # To do:
 
-1. In Abschnitt 2 zu wichtigen Institutionen etc. sollten noch Links hinzugefügt werden
-2. Abschnitt 1 zu den Editionen muss noch einmal überarbeitet werden. Genaueres müssen wir besprechen. Es sollte noch ein Eintrag zum FRBR Modell hinzugefügt werden, sowie zum für die TEI relevanten Modell (siehe dazu z.B. Pierazzo 2014). Für einzelne Einträge möchte ich vorab folgendes Template vorschlagen  (die ähnlich wie kurze Folien gehalten werden können):
 
-~~~{.md}
-# Name des Eintrags
-
-- Wer?
-- Wo/ in welcher Institution?
-- In welchem/welchen Werk befasst er/sie sich mit dem Thema
-- Von wann stammen diese überlegungen?
-- wie sind wir auf ihn/sie aufmerksam geworden? 
-- warum ist das wichtig?
-- Was sind die Kernpunkte ihrer/seiner Konzeption von Edition?
-~~~
+1. Es sollte noch ein Eintrag zum FRBR Modell hinzugefügt werden, sowie zum für die TEI relevanten Modell (siehe dazu z.B. Pierazzo 2014).
 
 # Über dieses Dokument (10. Oktober 2017)
 
@@ -32,85 +20,162 @@ In vielen Punkten werden die Ergebnisse einer Internet-Recherche präsentiert.
 
 # 1. Definition der Digitalen Edition
 
-Während in der deutschen Literatur stets der Begriff digitale **Editionen** verwendet wird, differenziert die englische Literatur zwischen digitalen **Editionen**, digitalen **wissenschaftliche Editionen**, sowie **elektronische Editionen**.
+Während in der deutschen Literatur stets der Begriff digitale **Editionen** verwendet wird, benutzt die englische Literatur digitale (**wissenschaftliche**) **Editionen**, sowie **elektronische Editionen** synonym.
 
-<!-- Frage: worin unterscheiden sich diese? -->
-
-Nachfolgend werden Definitionsversuche von Patrick Sahle, einem Angehörigen des *Center for eHumanities*, Brendan Duffy, einem *Digitisation Assistant* an der *Library National University of Ireland* und John Young, ein Author des *Committee on Scholarly Editions* vorgestellt. Es schien interessant diese drei Positionen nebeneinander zu stellen, da sie aus unterschiedlichen Institutionen stammen.
-
-<!-- Möglicherweise lässt sich die Bedeutung dieser Positionen inhaltlich aus ihnen selbst heraus begründen  -->
+Nachfolgend werden Definitionsversuche von Patrick Sahle, einem Angehörigen des *Center for eHumanities*, Brendan Duffy, einem *Digitisation Assistant* an der *Library National University of Ireland* und John Young, ein Author des *Committee on Scholarly Editions* vorgestellt. Es schien interessant diese drei Positionen nebeneinander zu stellen, da sie aus unterschiedlichen Institutionen stammen und zum Teil gegensätzlich sind.
 
 
-### Laut Patrick Sahle:
+### Deffinitionsversuch nach Patrick Sahle:
 
-Apl. Prof. Dr. Patrick Sahle arbeitet vorrangig für die *Koordinierungsstelle Digital Humanities* der *Nordrhein-Westfälischen Akademie der Wissenschaften und der Künste*. In Kooperation mit *Cologne Center for eHumanities* (CCeH) ist er für die DH-Angelegenheiten zuständig und beteiligt sich außerdem an der Leitung des CCeH. Darüber hinaus ist er bei dem Aufbau des *Data Center for the Humanities* (DCH) an der *Universität Köln* tätig.[^siehe dazu: IDE]
+- Wer:
+	+ Apl. Prof. Dr. Patrick Sahle arbeitet vorrangig für die *Koordinierungsstelle Digital Humanities* der *Nordrhein-Westfälischen Akademie der Wissenschaften und der Künste*. In Kooperation mit *Cologne Center for eHumanities* (CCeH) ist er für die DH-Angelegenheiten zuständig und beteiligt sich außerdem an der Leitung des CCeH. Darüber hinaus ist er bei dem Aufbau des *Data Center for the Humanities* (DCH) an der *Universität Köln* tätig.[^siehe dazu: IDE]
+- Institutionen:
+	+ Nordrhein-Westfälischen Akademie der Wissenschaften und der Künste
+	+ Cologne Center for eHumanities (CCeH)
+	+ Data Center for the Humanities (DCH), Universität Köln
+- Aus den Werken:
+	+ Vom editorischen Fachwissen zur digitalen Edition: Der Editionsprozeß zwischen Quellenbeschreibung und Benutzeroberfläche (2002).[^1]
+	+ Digital Scholarly Editions, v 3.0, snapshot 2008ff (2008).[^4]
+- Deffinitionsversuch wird von anderen Wissenschaftlern zitiert.
+	+ Siehe dazu: Pierazzo, Elena: Digital Scholarly Editing: Theories, Models and Methods (2014), S. 7, URL: http://hal.univ-grenoble-alpes.fr/hal-01182162.
+- Was:
+	+ Aufteilung des Begriffs in *Edition* und *digital*.
+	
+	> "Edition ist die erschließende Wiedergabe von historischen Dokumenten"[^2]
 
-Um den Begriff der digitalen Editionen zu erschließen ist es laut Sahle sinnvoll diesen in seine zwei Grundbegriffe zu spalten. Zunächst wird der Begriff Edition erläutert und anschließend mit dem Begriff digital ergänzt.[^1]
-
-> "Edition ist die erschließende Wiedergabe von historischen Dokumenten"[^2]
-
-Der Begriff *Wiedergabe* verweist hierbei auf zwei Dinge: Die Inhaltliche Abbildung und die Präsentation in einer Publikation. Man betrachtet diese zwei Aspekte oft als einen, in einer digitalen Welt trennt man sie jedoch in Inhalt und Form. Dabei werden die Inhalte durch spezifische Computersysteme organisiert, verwaltet und anschließend publiziert. Diese *Wiedergabe* ist nur eine mögliche Form von vielen, sie kann durch unterschiedliche Kriterien variieren (technische Umgebung, Vermarktungsabsichten usw.).
+	Der Begriff *Wiedergabe* verweist hierbei auf zwei Dinge: Die Inhaltliche Abbildung und die Präsentation in einer Publikation. Man betrachtet diese zwei Aspekte oft als einen, in einer digitalen Welt trennt man sie jedoch in Inhalt und Form. Dabei werden die Inhalte durch spezifische Computersysteme organisiert, verwaltet und anschließend publiziert. Diese *Wiedergabe* ist nur eine mögliche Form von vielen, sie kann durch unterschiedliche Kriterien variieren (technische Umgebung, Vermarktungsabsichten usw.).
 Das Vorwort *erschließende* meint dabei die Strukturierung der Dokumente auf der einen und das Hinzufügen von editorischem Fachwissen auf der anderen Seite.
 Unter *historische Dokumente* werden nicht nur historische Schriften, sondern ebenfalls Siegel, Abbildungen, Gemälde etc. verstanden.[^3]
 
-Nach dieser weiten Definition von wissenschaftlichen Editionen folgt die Frage was digitale Editionen sind. Digitale Editionen sind nicht nur Editionen als digitales Medium. Sahle unterscheidet dabei zwischen den Begriffen *digital* und *digitalisiert*. Daher ist eine gedruckte *digitalisierte Edition* keine *digitale Edition*, denn diese kann nicht ohne Informationsverluste oder Funktionsverluste gedruckt werden. Die *digitale Edition* folgt anderen Parametern als die traditionelle Edition. Sobald das Paradigma einer Edition auf einen zweidimensionalen Platz einer Seite begrenzt ist und Typografie als ein Mittel der Darstellungsform verstanden wird, handelt es sich nicht mehr um eine *digitale Edition*.[^4]
+	+ Unterscheidung zwischen *digital* und *digitalisiert*.
+	+ *Digitale Edition* könne nicht ohne Informations- oder Funktionsverluste gedruckt werden, sie folge anderen Parametern.[^4a]
 
-Folgende Aspekte muss eine Edition ermöglichen um als digitale Edition zu gelten:[^5]
+	Folgende Aspekte müsse eine Edition ermöglichen um als digitale Edition zu gelten:[^5]
 
-+ **Offenheit** (für Erweiterungen und Veränderungen)
-+ **Allgemeinheit** (für Benutzerkreise und Fragestellungen)
-+ **Unabhängigkeit** von der Publikationsform => multiple Publikationsformen
-+ **Langfristige Nutzbarkeit** (allgemeine Strukturen, Standardisierung)
-+ **Interoperationabilität** (Orientierung an gängigen Standards und Normen) 
+	+ **Offenheit** (für Erweiterungen und Veränderungen)
+	+ **Allgemeinheit** (für Benutzerkreise und Fragestellungen)
+	+ **Unabhängigkeit** von der Publikationsform => multiple Publikationsformen
+	+ **Langfristige Nutzbarkeit** (allgemeine Strukturen, Standardisierung)
+	+ **Interoperationabilität** (Orientierung an gängigen Standards und Normen) 
 
 ### Laut Brendan Duffy:
 
-Brendan Duffy ist ein *Digitisation Assistant* an der *Library National University of Ireland* in Galway.
-
-- Laut seiner Meinung ergänzt die digitale Edition die gedruckte Edition lediglich durch Faksimiles (bspw. gescannte Bilder der Manuskripte). Sie enthält dabei alle Kriterien der traditionellen Editionen. 
-- Für ihn ist das Ziel digitaler Editions-Projekte einen maschinenlesbaren Text aus dem Ursprungstext zu schaffen.
-Digitale Editionen basieren auf einer Vielzahl an Standards und Technologien. 
-
-Einen weit verbreiteten Standard für Text-Encoding bildet TEI (Text Encoding Initiative). [^6]
+- Wer:
+	+ Brendan Duffy, *Digitisation Assistant*.
+- Institution:
+	+ *Library National University of Ireland* in Galway.
+- Interessanter weil:
+	+ Standpunkt widersprüchlich zur Definition von Patrick Sahle.
+- Was:
+	+ Die digitale Edition ergänze die gedruckte Edition lediglich durch Faksimiles (bspw. gescannte Bilder der Manuskripte). Sie enthalte dabei alle Kriterien der traditionellen Editionen. 
+	+ Das Ziel digitaler Editions-Projekte sei es einen maschinenlesbaren Text aus dem Ursprungstext zu schaffen.
+	+ Digitale Editionen basieren auf einer Vielzahl an Standards und Technologien.[^6]
 
 
 ### Laut John Young:
 
-John Young ist ein Author des *Committee on Scholarly Editions*. Dieses wurde 1979 gegründet und dient als Clearinghouse für Informationen über wissenschaftliche Editionen und editorische Projekte.  Er versteht unter *Edition* ein Medium, welches es ermöglicht Texten und Dokumenten zu begegnen und diese zu studieren. *Editionen* sind daher ein repräsentatives Instrument, welches zugleich einsehbar und kritisierbar ist. Im Unterschied zu anderen Editionen, folgt die *wissenschaftliche Edition* wissenschaftlichen Methoden und Absichten. Dies unterliegt professionellen kritischen Beurteilungen und einem möglichst großem Verständnis des relevanten behandelten Materials. Die wissenschaftlichen Editionen des 21. Jahrhundert werden häufig mithilfe von digitale Methoden dargestellt. Diese sind äußerst bedeutend, jedoch führen sie des Öfteren bloß dazu bereits vorhandenes Potenzial wissenschaftlicher Editionen zu erkennen anstatt dieses zu überdenken.[^7]
-
+- Wer:
+	+ John Young ist ein Author des *Committee on Scholarly Editions*.
+- Institution: 
+	+ Committee on Scholarly Editions wurde 1979 gegründet und dient als Clearinghouse für Informationen über wissenschaftliche Editionen und editorische Projekte.
+- Aus dem Artikel:
+	+ Considering the Scholarly Edition in the Digital Age: A White Paper of the Modern Language Association’s Committee on Scholarly Editions (**2015**).[^7]
+- Was:
+	+ *Edition* sei ein Medium, welches es ermöglicht Texten und Dokumenten zu begegnen und diese zu studieren. (Repräsentatives Instrument, zugleich einsehbar und kritisierbar.)
+	+ Die *wissenschaftliche Edition* folge im Unterschied zu anderen Editionen wissenschaftlichen Methoden und Absichten, sie werden häufig mithilfe von *digitalen Methoden* dargestellt.
+	+ Digitale Methoden dürfen nicht nur als Dekoration dienen, spezifischen digitalen Funktionalitäten müssen mit den Zielen der wissenschaftlichen Editionen übereinstimmen.[^9]
 
 ## Kommentare
 
 ### Malte Rehbein:
 
-Prof. Dr. Malte Rehbein ist Professor an der Universität Passau und leitet den Lehrstuhl für Digital Humanities.[^rehbein]
-Seiner Meinung nach spricht gegen die Diskussion des Übergangs eines gedruckten Werkes in ein elektronisch editiertes, dass das Editieren nach wie vor eine Transformation von einem Werk in ein anderes ist. So ist zwischen dem Manuskript und einer gedruckten oder elektronischen Version stets eine Lücke. Es geht hierbei nicht um den Paradigmenwechsel des gedruckten zum digitalen, sondern vom statischen zum dynamischen und vom Output-getriebenen zum Input- und User-getriebenen. Dies erfordert eine völlig neue Denkweise. Er glaubt nicht, dass es so etwas wie *digitales Denken* gibt. Er glaubt ebenfalls nicht, dass *klassisches Denken* an das Medium Buch gebunden ist. Eine *Edition zu denken* muss unabhängig vom Medium selbst sein.[^rehbein_text] 
-
+- Wer:
+	+ Prof. Dr. Malte Rehbein, Professor und Leiter des Lehrstuhls für Digital Humanities.[^rehbein]
+- Institution:
+	+ Universität Passau
+- Aus dem Werk:
+	+ The Transition from classical to digital thinking (23. April 2009).[^rehbein_text]
+- Weitere Werke zu diesem Thema:
+	+ Burghart, Marjorie, and Malte Rehbein. ["The Present and Future of the TEI Community for Manuscript Encoding"](http://jtei.revues.org/372). Journal of the Text Encoding Initiative. 2 (2012).
+	+ Rehbein, Malte, and Ryder Sean. ["The TEI@Galway - Towards A Digital Scholarly Community in Ireland"](http://computerphilologie.tu-darmstadt.de/jg08/preface.html). Jahrbuch für Computerphilologie. 10 (2010): 7–10.
+	+ Rehbein, Malte. ["Vom Nutzen digitaler Editionen - das Göttinger kundige bok"](http://webdoc.gwdg.de/edoc/aw/buw/band/42/01Rehbein.pdf). Bibliothek und Wissenschaft. 42 (2009): 7–28.
+	+ Aumann, Stefan, Hans-Heinrich Ebeling, Hans-Reinhard Fricke, Peter Hoheisel, Malte Rehbein, and Manfred Thaller. ["From Digital Archive to Digital Edition"](http://hsr-trans.zhsf.uni-koeln.de/hsrretro/docs/artikel/hsr/hsr1999_477.pdf). Historical Social Research. 24 (1999): 101–145.
+	+  Alle Publikationen unter: <http://www.phil.uni-passau.de/dh/lehrstuhlteam/prof-dr-malte-rehbein/>
+- Was:
+	+ Das Editieren sei nach wie vor eine Transformation von einem Werk in ein anderes. Zwischen dem Manuskript und einer gedruckten oder elektronischen Version sei stets eine Lücke.
+	+ Wichtig: Übergang des statischen zum dynamischen und des Output-getriebenen zum Input- und User-getriebenen.
+	+ *Edition zu denken* müsse unabhängig vom Medium selbst sein.
 
 ### Elena Pierazzo:
 
-Elena Pierazzo ist Professorin im Fach Italian Studies und Digital Humanities an der *Université Grenoble Alpes* in GERCI, Frankreich.[^pierazzo] 
-Sie ist der Auffassung, dass in der Praxis des wissenschaftlichen Editierens ein großer struktureller und theoretischer Wandel aufgrund der Einsatzes von Computern stattfindet. Sie unterstützen die editorische Arbeit auf der einen und verbreiten sie auf der anderen Seite. Computer sind weitaus mehr als nur elektronische Rechercheassistenten. Sie leiten uns dazu zu hinterfragen, welcher Hermeneutik und Heuristik wissenschaftliche Texte unterliegen.
-Nach der ersten Stufe der Digitalisierung wurde laut Pierazzo deutlich, dass die Möglichkeit besteht die traditionelle editorische Praxis simpel in das neue Medium zu transferieren. Dadurch entstanden neue editorische Modelle, Arbeitsabläufe und wissenschaftliche Ziele.[^pierazzo_text]
-
+- Wer:
+	+ Elena Pierazzo, Professorin im Fach Italian Studies und Digital Humanities.[^pierazzo]
+- Institution:
+	+ *Université Grenoble Alpes* in GERCI, Frankreich.
+- Aus dem Werk:
+	+ Digital Scholarly Editing: Theories, Models and Methods (2014)[^pierazzo_text]
+- Weitere Werke zu diesem Thema:
+	+ Digital Scholarly Editing: Theories and Practices (2015)[^pierazzo&driscoll]
+- Was:
+	+ In der Praxis des wissenschaftlichen Editierens finde ein großer struktureller und theoretischer Wandel aufgrund der Einsatzes von Computern statt.
+	+ Computer seien weitaus mehr als nur elektronische Rechercheassistenten, leiten zur Hinterfragung der Hermeneutik und Heuristik wissenschaftlicher Texte.
+	+ Simple Transformierung der traditionellen editorischen Praxis in das neue Medium
+	+ => Neue editorische Modelle, Arbeitsabläufe und wissenschaftliche Ziele
 
 ### Kenneth M. Price 
 
-Kenneth M. Price ist Universitätsprofessor der amerikanischen Literatur und der Co-Direktor des *Center for Digital Research in the Humanities* an der *University of Nebraska–Lincoln*.[^siehe_price] Er denkt, dass die fortlaufende Transformation von wissenschaftlichen Publikationen zu digitalen Produktionen und Veröffentlichungen von vielen Menschen mit etwas Angst kommentiert wird. Dass sich ein wachsender Berg an wissenschaftlichen Arbeiten zunehmend in digitaler Form repräsentieren wird, scheint für ihn unausweichlich.
-Der Wandel zu elektronischen Editionen ist aus seiner Sichtweise bemerkenswert, da diese häufig einen großen Umfang aufweisen und sehr Zeit- und Geldintensiv sind.[^8]
-
-- wer:
-- wo (institution):
-- wo (texte, werk) etc.:
-- wie sind wir auf ihn/sie aufmerksam geworden? / warum ist das wichtig?:
-- was: 
+- Wer:
+	+ Kenneth M. Price, Universitätsprofessor der amerikanischen Literatur und der Co-Direktor des *Center for Digital Research in the Humanities*.[^siehe_price]
+- Institution:
+	+ University of Nebraska–Lincoln
+	+ Center for Digital Research in the Humanities
+- Aus dem Werk:
+	+ 	Electronic Scholarly Editions, in: A Companion to Digital Literary Studies (2008).[^8]
+- Was:
 	+ Paradigmenwandel von analog zu digital
 	+ Verunsichert einige Menschen (Relevanz dieser Aussage? So what?)
 
+## Das FRBR Modell
 
-### John Young
+Das Bekannteste und einflussreichste Modell bibliografischer Katalogisierung wurde 1998 von Bibliotheken entworfen: *Functional Requirement of Bibliographic Records* - auch bekannt als **FRBR**.
 
-John Young fügt hinzu, dass durch die digitale Komponente neue Wege geschaffen werden um wissenschaftliche Editionen zu gestalten. Ebenfalls wird dadurch der Kontext für ihren Gebrauch sowie die pädagogische und kulturelle Bedeutung erweitert. Die digitale Kommunikation verlangt neue Sichtweisen der Bildung. Dazu gehören neue Fähigkeiten und Einstellungen im Bezug zum schreiben, lesen und interpretieren. Dennoch sollten digitale Methoden gründlich durchdacht, begründet und erklärt werden. Des Weiteren dürfen sie seiner Meinung nach nicht nur als Dekoration dienen. Die spezifischen digitalen Funktionalitäten müssen mit den Zielen der wissenschaftlichen Editionen übereinstimmen.[^9]
+Das Konzept stützt sich auf Entitäten und Beziehungen zwischen den einzelnen Werke und bringt diese dadurch in Verbindung.
+
+Dabei wird zwischen zwei Entitäten-Gruppen unterschieden:
+
+- Entitäten für intellektuelle und künstliche Inhalte:
+
+	+ *work*
+	+ *expression*
+
+- Entitäten für physikalische Inhalte:
+
+	+ *manifestation*
+	+ *item*
+
+**Beispielhaftes Schema:**
+
+![Alt-Text](Schema_FRBR_Pierazzo.png)
+
+**Multiple Dimensionen:**
+
+![Alt-Text](Dimensionen_FRBR_Pierazzo.png)
+
+- Nutzen des FRBR:
+
+	+ Deklination des Modells zur Spezifizierung verschiedener Abstraktionslevel und zur Materialität/Immaterialität.
+	+ Versuch der Organisation verschiedener bibliografischer Konzepte in einem kohärenten und hierarchischen System.
+	+ Veranschaulichung der Entwicklung verschiedener konzeptueller Modelle durch verschiedener Sichtweisen und funktionalen Voraussetzungen.
+
+- Grenzen des FRBR:
+
+	+ Konzeptionelles Modell mit dem Ziel Bibliotheksbestände zu organisieren
+	+ Daher andere Ziele bezüglich textlicher, wissenschaftlicher Versuche für ordnende Prinzipien komplexer Realitäten der materiellen und immateriellen Objekte und Ideen.
+	+ Lösung: **FRBRoo Modell** (FRBR objektorientiert) mit fünfter Entität *Manifestation Singleton* für einzigartige Objekte wie Manuskripte, vorbereitende Skizzen und dem endgültigen Entwurf.
+ 
+## Das OHCO Modell
+
+
 
 #  2. Wichtige Institutionen, Lehrstühle, Zeitschriften, Blogs und Veranstaltungen im Bereich Digital Humanities
 
@@ -125,7 +190,7 @@ John Young fügt hinzu, dass durch die digitale Komponente neue Wege geschaffen 
 	- [**CSDH/SCHN**](http://csdh-schn.org/) – Canadian Society for Digital Humanities / Société canadienne des humanités numériques
 	
 2. Zentren (in Deutschland):[^zentren]
-	- [**Kallimachos - Zentrum für digitale Edition und quantitative Analyse**]() – Würzburg 
+	- [**Kallimachos - Zentrum für digitale Edition und quantitative Analyse**](http://kallimachos.de/kallimachos/index.php/Hauptseite) – Würzburg 
 	- [**Historisch-Kulturwissenschaftliche Informationsverarbeitung**](http://www.hki.uni-koeln.de/) – Universität zu Köln 
 	- [**Göttingen Centre for Digital Humanities (GCDH)**](http://www.gcdh.de/en/) – Georg-August-Universität Göttingen 
 	- [**Cologne Center for eHumanities (CCeH)**](http://www.cceh.uni-koeln.de/) – Universität Köln
@@ -174,7 +239,7 @@ Nachfolgend wird der aktuelle technische und strukturelle Stand am Orient-Instit
 
 	**Probleme:**
 	- Auf die älteren Formate kann ohne eine Lizenz nicht zugegriffen werden.
-	- Die verwendeten Formate sind generell nicht ausreichend Doumentiert und müssen in Microsoft-fremden Umgebungen rekonstruiert werden.
+	- Die verwendeten Formate sind generell nicht ausreichend doumentiert und müssen in Microsoft-fremden Umgebungen rekonstruiert werden.
 	
 + **PDF** wird oft als Standard Outputformat verwendet.
 
@@ -182,11 +247,12 @@ Nachfolgend wird der aktuelle technische und strukturelle Stand am Orient-Instit
 	- Bei PDF handelt es sich um ein proprietäres Format von Adobe.
 	- Das Format ist nicht ausreichend dokumentiert.
 	- Ein professionelles arbeiten mit diesem Format ist ohne den Erwerb von kostspieligen Lizenzen für die dazugehörigen Abode-Anwendungen nicht möglich.
-	- Das Format dient mehr zur präsentations Zwecken als zur Weiterverarbeitung von Dokumenten.
+	- Das Format dient mehr zu präsentations Zwecken als zur Weiterverarbeitung von Dokumenten.
 	- PDF-Dateien werden nicht sequenziell geladen und sind daher für webbasierte Anwendungen nicht geeignet.
 	- Gemeinsames arbeiten an einem Quelltext ist durch den stark eingeschränkten Bearbeitungsmodus nicht möglich.
 
 Siehe hierzu: Grallert, Till: Technische Aspekte, oder: the D in Digital Humanities (2015), URL: <http://www.sitzextase.de/blog/2015/02/23/workshop-editions-material/>
+
 ## Benötigte technische Grundsätze
 
 + Gute **Dokumentation** aller verwendeter Sprachen und Software.
@@ -223,6 +289,7 @@ Forschungsrat](https://www.bmbf.de/pub/Antragstellung_beim_ERC.pdf) veröffentli
 [^2]: Vgl. ebd.
 
 [^3]: Vgl. ebd.
+[^4a]: Vgl. ebd.
 
 [^4]: Sahle, Patrick: a catalog of: Digital Scholarly Editions, v 3.0, snapshot 2008ff (2008), URL: <http://www.digitale-edition.de/vlet-about.html> [abgerufen am 11.10.2017].
 
@@ -253,7 +320,9 @@ Forschungsrat](https://www.bmbf.de/pub/Antragstellung_beim_ERC.pdf) veröffentli
 
 [^pierazzo_text]: Pierazzo, Elena: Digital Scholarly Editing: Theories, Models and Methods (2014), S. 7, URL: <http://hal.univ-grenoble-alpes.fr/hal-01182162>.
 
-[^metadaten]: DFG-Praxisregeln: Digitalisierung, Deutsche Forschungsgemeinschaft, S. 6, URL: <http://www.dfg.de/formulare/12_151/12_151_de.pdf> [abgerufen am 17.10.2017].
+[^pierazzo&driscoll]: Driscoll, Matthew James; Pierazzo, Elena: Digital Scholarly Editing Theories and Practices (2015), URL: <https://www.openbookpublishers.com/product.php/483?483>.
+
+[^metadaten]: DFG-Praxisregeln: Digitalisierung, Deutsche Forschungsgemeinschaft, S. 6, URL: <http://www.dfg.de/formulare/12_151/12_151_de.pdf> [abgerufen am 17.10.2017].; 
 
 [^formatsprachen]: Vgl. ebd. S. 8.
 
