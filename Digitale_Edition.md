@@ -8,8 +8,7 @@ date: 2017-10-19
 # To do:
 
 
-2. Abschnitt 1 zu den Editionen muss noch einmal überarbeitet werden. Genaueres müssen wir besprechen. Es sollte noch ein Eintrag zum FRBR Modell hinzugefügt werden, sowie zum für die TEI relevanten Modell (siehe dazu z.B. Pierazzo 2014). Für einzelne Einträge möchte ich vorab folgendes Template vorschlagen  (die ähnlich wie kurze Folien gehalten werden können):
-
+2. Es sollte noch ein Eintrag zum FRBR Modell hinzugefügt werden, sowie zum für die TEI relevanten Modell (siehe dazu z.B. Pierazzo 2014).
 
 # Über dieses Dokument (10. Oktober 2017)
 
