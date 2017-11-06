@@ -63,6 +63,7 @@ date: 2017-11-06 10:22:16 +0200
 		~~~
 	
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/VE.html>
+	+ In arabischen Gedichten kommen oft Halbzeilen vor: `<seg>`
 
 - **Tabellen**
 	+ `<table>`
@@ -89,7 +90,7 @@ date: 2017-11-06 10:22:16 +0200
 		</table>
 		~~~
 
-- **Einschübe**
+- **Einschübe**: `<floatingText>`
 - **Listen**
 
 	Beispiel:
@@ -110,6 +111,9 @@ date: 2017-11-06 10:22:16 +0200
 	+ Siehe: <http://web.uvic.ca/lancenrd/martin/guidelines/ref-list.html>
 
 - **Rechnungen** (mit Ergebnis)
+	+ Zahlen: `<num>` können mit `@value` normalisiert werden.
+	+ Maße: `<measure>` und `<measureGrp>`
+		* `<measure commodity="" unit="" quantity=""/>`
 
 
 ## 2. Strukturelemente: block level oder inline (z.B. Zitate, Auslassungen)
@@ -127,6 +131,8 @@ date: 2017-11-06 10:22:16 +0200
 
 
 - **Koranverse**
+
+Könnten wir als Verse betrachten.
 
 	Beispiel:
 	
@@ -148,8 +154,10 @@ date: 2017-11-06 10:22:16 +0200
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/VE.html>
 
 - **Chronogram**
+	+ Wir schlagen `<date>` vor. Datum kann dann mit `@when` und `@when-custom` normalisiert werden.
 
 - **Hadith**
+	+ Bestandteile sind Überlieferungskette und Text.
 
 ## 2. Graphische Markierungen: inline (Überstriche, farbliche Hervorhebungen, Anführungszeichen)
 
@@ -160,6 +168,10 @@ date: 2017-11-06 10:22:16 +0200
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-head.html>
 	
 - **Überstriche**
+
+1. `<hi rendition="#apples"/>`, wie "apples" dann aussehen soll, wird woanders festgelegt; z.B. formalisiert im teiHeader mit `<rendition>` (<http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-rendition.html>).
+2. `<hi rend="center"/>`, dann liegt keine maschinenlesbare Formalisierung vor.
+
 - **Seitenzahlen und Umbrüche** (Seitenzahlen sind in [ ])
 	Beispiel:
 	
@@ -182,8 +194,9 @@ date: 2017-11-06 10:22:16 +0200
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html>
 	
 - **Gliedernde Querstriche**
-- **Highlight** (z.B. bei Überschriften oder farbig)
+	+ Da Querstriche ein graphisches Element sind, könnten sie als `<graphic>` getaggt werden.
 
+- **Highlight** (z.B. bei Überschriften oder farbig)
 	+ `<hi rend="gothic">`And this Indenture further witnesseth`</hi>`
 that the said `<hi rend="italic">`Walter Shandy`</hi>`, merchant,
 in consideration of the said intended marriage ...
@@ -241,8 +254,9 @@ in consideration of the said intended marriage ...
 
 ## 3. Editorische Eingriffe
 
-- **Seiten fehlen**
+- **Seiten fehlen**: `<gap resp=""/>`
 - **Verbesserungen und Streichungen** (meist: \<verbessert in> [ursprünglich])
+	+ Streichungen
 
 	Beispiel:
 	
@@ -254,7 +268,27 @@ in consideration of the said intended marriage ...
 		~~~
 	
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-del.html>
+	+ Hinzufügungen: `<add>`
 
+	Beispiel:
+	
+		~~~{.xml}
+		<l>
+			<del rend="overtyped">Mein</del> <add>Frisch</add>
+			<del rend="overstrike" type="primary">schwebt</del> <add>weht</add> der Wind
+		</l>
+		~~~
+
+	+ Beides zusammen lässt sich noch in ein `<choice>` element verpacken.
+
+	Beispiel:
+	
+		~~~{.xml}
+		<l>
+			<del rend="overtyped">Mein</del> <add>Frisch</add>
+			<choice><del rend="overstrike" type="primary">schwebt</del> <add>weht</add></choice> der Wind
+		</l>
+		~~~
 
 ## 4. Named entities: Daten, Namen, Personen, Orte
 
@@ -301,4 +335,5 @@ to
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html>
 	
 - **Gruppen von Leuten** (z.B. Wenn oft Leute auf dem Markt)
+	+ `<orgName>`
 
