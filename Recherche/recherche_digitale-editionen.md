@@ -5,11 +5,6 @@ editor: Till Grallert
 date: 2017-10-19
 ---
 
-# To do:
-
-
-1. Es sollte noch ein Eintrag zum FRBR Modell hinzugefügt werden, sowie zum für die TEI relevanten Modell (siehe dazu z.B. Pierazzo 2014).
-
 # Über dieses Dokument (10. Oktober 2017)
 
 Dieses Dokument bietet einen Überblick über die wichtigsten Positionen, Argumente und der Literatur zum Thema Digitale Editionen. Des Weiteren werden wichtige Institutionen, Lehrstühle, Zeitschriften, Blogs und Veranstaltungen im Bereich Digital Humanities aufgeführt.
@@ -64,7 +59,7 @@ Unter *historische Dokumente* werden nicht nur historische Schriften, sondern eb
 	+ Brendan Duffy, *Digitisation Assistant*.
 - Institution:
 	+ *Library National University of Ireland* in Galway.
-- Interessanter weil:
+- Interessant weil:
 	+ Standpunkt widersprüchlich zur Definition von Patrick Sahle.
 - Was:
 	+ Die digitale Edition ergänze die gedruckte Edition lediglich durch Faksimiles (bspw. gescannte Bilder der Manuskripte). Sie enthalte dabei alle Kriterien der traditionellen Editionen. 
@@ -80,6 +75,8 @@ Unter *historische Dokumente* werden nicht nur historische Schriften, sondern eb
 	+ Committee on Scholarly Editions wurde 1979 gegründet und dient als Clearinghouse für Informationen über wissenschaftliche Editionen und editorische Projekte.
 - Aus dem Artikel:
 	+ Considering the Scholarly Edition in the Digital Age: A White Paper of the Modern Language Association’s Committee on Scholarly Editions (**2015**).[^7]
+- Interessant weil:
+	+ Aufspaltung in Edition, wissenschaftliche Edition und digitale Methoden.
 - Was:
 	+ *Edition* sei ein Medium, welches es ermöglicht Texten und Dokumenten zu begegnen und diese zu studieren. (Repräsentatives Instrument, zugleich einsehbar und kritisierbar.)
 	+ Die *wissenschaftliche Edition* folge im Unterschied zu anderen Editionen wissenschaftlichen Methoden und Absichten, sie werden häufig mithilfe von *digitalen Methoden* dargestellt.
@@ -137,9 +134,11 @@ Unter *historische Dokumente* werden nicht nur historische Schriften, sondern eb
 
 ## Das FRBR Modell
 
+**Aus dem Werk:** Digital Scholarly Editing: Theories, Models and Methods S. 62-66 (2014).[^pierazzo_FRBR]
+
 Das Bekannteste und einflussreichste Modell bibliografischer Katalogisierung wurde 1998 von Bibliotheken entworfen: *Functional Requirement of Bibliographic Records* - auch bekannt als **FRBR**.
 
-Das Konzept stützt sich auf Entitäten und Beziehungen zwischen den einzelnen Werke und bringt diese dadurch in Verbindung.
+Das Konzept stützt sich auf Entitäten und Beziehungen zwischen den einzelnen Werken und bringt diese dadurch in Verbindung.
 
 Dabei wird zwischen zwei Entitäten-Gruppen unterschieden:
 
@@ -175,8 +174,17 @@ Dabei wird zwischen zwei Entitäten-Gruppen unterschieden:
  
 ## Das OHCO Modell
 
+**Aus dem Werk:** Digital Scholarly Editing: Theories, Models and Methods S. 69-73 (2014).[^pierazzo_OHCO]
 
+- **O**rdered **H**ierarchy of **C**ontent **O**bjects
+- Entstanden aus zwei Charakteristika:
+	+ SGML und XML fordert eine eindeutige Texthierarchie ohne Überlappungen. Bsp: Wenn ein Gedicht ausgezeichnet werden soll ist es nicht möglich sowohl die Syntax als auch die Verse gleichzeitig zu kennzeichnen, da die Syntax sich über mehrere Verse erstrecken kann.
+	+ Trennung des Inhaltes von der Darstellung des Textes
+- Immaterielle Verbale Dimension, kann nicht gleichzeitig linguistische und literarische Dimensionen eines Textes repräsentieren
+- TEI folgt diesem Modell da es auf XML beruht und das OHCO Modell diese Arbeitsweise beschreibt.
+- OHCO entwickelt um Publikationsprozesse zu beschreiben, nicht die editorische, wissenschaftliche Arbeit.
 
+	
 #  2. Wichtige Institutionen, Lehrstühle, Zeitschriften, Blogs und Veranstaltungen im Bereich Digital Humanities
 
 ## Institutionen:
@@ -333,3 +341,7 @@ Forschungsrat](https://www.bmbf.de/pub/Antragstellung_beim_ERC.pdf) veröffentli
 [^TEI]: Vgl. ebd. S. 38.
 
 [^unicode]: Vgl. ebd. S.38.
+
+[^pierazzo_FRBR]: Vgl. Pierazzo, Digital Scholarly Editing: Theories, Models and Methodes, S. 62-66.
+
+[^pierazzo_OHCO]: Vgl. ebd. S. 69-73.
