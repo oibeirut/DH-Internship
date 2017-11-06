@@ -81,6 +81,7 @@ Das Schema dient zur Definition der Struktur eines XML-Dokuments um die erlaubte
 - Solide theoretische Basis
 - Ist mit einer separaten Datentypen Sprache vereinbar wie beispielsweise W3C XML Schema Datatypes 
 - ISO Standard, leider nicht so sehr verbreitet wie XML Schema
+- Für reguläre Ausdrücke siehe: <http://books.xmlschemata.org/relaxng/relax-CHP-9.html>
 
 ## Schematron
 
@@ -98,6 +99,7 @@ Das Schema dient zur Definition der Struktur eines XML-Dokuments um die erlaubte
 - Nur 5 wichtige Elemente enthalten
 - Ausdruck vieler Einschränkungen die in anderen Schemasprachen unmöglich sind
 - ISO Standard
+- Dient zur Unterstützung der Schema-Sprachen DTD, XML Schema und Relax NG
 
 
 
@@ -109,7 +111,8 @@ Das Schema dient zur Definition der Struktur eines XML-Dokuments um die erlaubte
 - [w3schools Schema](https://www.w3schools.com/xml/xml_schema.asp)
 - [w3school Schema Tutorial](https://www.w3schools.com/xml/schema_intro.asp)
 - [RelaxNG](http://relaxng.org/)
-- [Schematron](http://schematron.com/)
+- [Schematron.com](http://schematron.com/)
+- [Zukünftige deutsche Schematron Info und Tutorial Webseite](http://www.schematron.de/)
 - [video2brain](https://www.video2brain.com/de/tutorial/dtd-schema-und-relaxng)
 
 
@@ -131,6 +134,24 @@ Das Schema dient zur Definition der Struktur eines XML-Dokuments um die erlaubte
 	+ Intuitiv, leichte Bedienung
 	+ Für komplexe Schemata geeignet
 
+
+## ODD (One Document Does It All)
+
+- Zweck:
+	+ Dokumentation der XML-Elemente und Elementklassen
+	+ Automatische Generierung eines Schemas
+	+ Alles anhand der TEI Guidelines
+- ODD erzeugt aus einem einzelnen XML-Dokument multiple Outputs mit folgendem Inhalt:
+	+ Formale Referenz-Dokumentation für Elemente, Attribute, Elementklassen, Strukturen
+	+ Detaillierte deskriptive Dokumentation einschließlich einiger Aspekte der formalen Referenz-Dokumentation wie bspw. die Tag-Listen-Beschreibung
+	+ Deklarativer Code für eine oder mehrere XML Schema-Sprachen wie: RELAX NG, W3C Schema, ISO Schematron, DTD.
+- TEI ist in ODD geschrieben
+- ODD Dokument = TEI XML Dokument mit tagdocs Modul
+	+ Beinhaltet eine Serie an Elementen für eine Schemaspezifikation bzw. Modifikation der TEI Elementenstruktur.
+- Siehe dazu: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html>
+	
+	
 # Fazit
 
-Für unsere Zwecke scheint das XML-Schema am sinnvollsten, da es in XML geschrieben ist und kompatibel mit bereits verwendeten Editoren und Parsern.
+Für unsere Zwecke scheint das **XML-Schema** am sinnvollsten, da es in XML geschrieben ist und kompatibel mit bereits verwendeten Editoren und Parsern.
+Die Unterstützung von XML-Schema mit **Relax NG** ist sinnvoll, da es Regeln mithilfe von regulären Ausdrücken miteinbeziehen kann.
