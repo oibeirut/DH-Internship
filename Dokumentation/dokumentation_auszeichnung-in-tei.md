@@ -1,4 +1,12 @@
-## Besprechung benötigter Auszeichnungen für die digitale Edition der BI / BTS (26.10.2017)
+---
+title: "Dokumentation: Auszeichnungen für TEI Editionen arabischer Manuskripte"
+author:
+	- Julia Dolhoff 
+	- Till Grallert
+date: 2017-11-06 10:22:16 +0200
+---
+
+# Besprechung benötigter Auszeichnungen für die digitale Edition der BI / BTS (26.10.2017)
 
 => Keine Auszeichnungen in Word!
 
@@ -12,22 +20,40 @@ Es gibt:
 - Seitenzahlen => sind in [ ] 
 - Chronogram
 - Tabellen
-	+ `<tabel>`
+	+ `<table>`
 	+ `<row>`
 	+ `<cell>`
 
-Beispiel:
+    Beispiel:
 
+<!-- <table>
+<head>US State populations, 1990</head>
+<row>
+<cell>Wyoming</cell>
+<cell>453,588</cell>
+</row>
+<row>
+<cell role="statename">Alaska</cell>
+<cell role="pop">550,043</cell>
+</row> -->
+
+		~~~{.xml}
 		<table>
-		<head>US State populations, 1990</head>
-		<row>
-		<cell>Wyoming</cell>
-		<cell>453,588</cell>
-		</row>
-		<row>
-		<cell role="statename">Alaska</cell>
-		<cell role="pop">550,043</cell>
-		</row>
+			<head>US State populations, 1990</head>
+			<row role="label">
+				<cell>state</cell>
+				<cell>population</cell>
+			</row>
+			<row role="data">
+				<cell>Wyoming</cell>
+				<cell>453,588</cell>
+			</row>
+			<row role="data">
+				<cell><placeName>Alaska</placeName></cell>
+				<cell><num value="550043">550,043</num></cell>
+			</row>
+		</table>
+		~~~
 
 - Einschübe
 - Verbesserungen \<verbessert in> [ursprünglich]
@@ -52,7 +78,8 @@ Beispiel:
  	+ `<birth notBefore="1857-03-01"
  notAfter="1857-04-30">`Some time in
  March or April of 1857.`</birth>`
- 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html> 
+ 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html>
+ 	+ Für nicht-gregorianische Kalender siehe die Dokumentation von [OpenArabicPE](https://www.github.com/openarabicpe) bzw. [Digital Muqtabas](https://www.github.com/tillgraller/digital-muqtabas) 
 
  
 - **Personen**
@@ -132,3 +159,10 @@ to
 	 
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html> 
 - Wenn oft Leute auf dem Markt => Gruppen von Leuten
+
+# Vorgeschlagene Gliederung
+## 1. Strukturelemente: block-level (z.B. Text, Paragraph, Gedicht)
+## 2. Strukturelemente: block level oder inline (z.B. Zitate, Auslassungen)
+## 2. Graphische Markierungen: inline (Überstriche, farbliche Hervorhebungen, Anführungszeichen)
+## 3. Editorische Eingriffe
+## 4. Named entities: Personen, Orte
