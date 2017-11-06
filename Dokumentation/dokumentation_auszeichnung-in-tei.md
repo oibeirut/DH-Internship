@@ -8,34 +8,68 @@ date: 2017-11-06 10:22:16 +0200
 
 # Besprechung benötigter Auszeichnungen für die digitale Edition der BI / BTS (26.10.2017)
 
-=> Keine Auszeichnungen in Word!
+## Generelle Anmerkungen:
 
-=> Text später alles auf arabisch (auch Fußnoten), nur Einleitung auf Englisch
+- Word Datei liegt ohne Auszeichnungen vor
+- Text später alles auf Arabisch (auch Fußnoten), nur Einleitung auf Englisch
 
-Es gibt:
+## 1. Strukturelemente: block-level (z.B. Text, Paragraph, Gedicht)
 
-- Seiten fehlen
-- Überschriften
-- Gedichte
-- Seitenzahlen => sind in [ ] 
-- Chronogram
-- Tabellen
+- **Einheiten im Text** (einzelne Einträge) / **Geschichten**
+
+	Beispiel:
+	
+		~~~{.xml}
+		<text>
+		<!-- Section on Alexander Pope starts -->
+			<front>
+			<!-- biographical notice by editor -->
+			</front>
+			<group>
+				<text>
+				<!-- first poem -->
+				</text>
+				<text>
+				<!-- second poem -->
+				</text>
+			</group>
+		</text>
+		~~~
+	
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/DS.html>
+	
+- **Gedichte**
+
+	Beispiel:
+	
+		~~~{.xml}
+		<text>
+			<body>
+				<head>My Alba</head>
+				<lg>
+					<l>Now that I've wasted</l>
+					<l>five years in Manhattan</l>
+					<l>life decaying</l>
+					<l>talent a blank</l>
+				</lg>
+				<lg>
+					<l>talking disconnected</l>
+					<l>patient and mental</l>
+					<l>sliderule and number</l>
+					<l>machine on a desk</l>
+				</lg>
+			</body>
+		</text>
+		~~~
+	
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/VE.html>
+
+- **Tabellen**
 	+ `<table>`
 	+ `<row>`
 	+ `<cell>`
 
     Beispiel:
-
-<!-- <table>
-<head>US State populations, 1990</head>
-<row>
-<cell>Wyoming</cell>
-<cell>453,588</cell>
-</row>
-<row>
-<cell role="statename">Alaska</cell>
-<cell role="pop">550,043</cell>
-</row> -->
 
 		~~~{.xml}
 		<table>
@@ -55,21 +89,174 @@ Es gibt:
 		</table>
 		~~~
 
-- Einschübe
-- Verbesserungen \<verbessert in> [ursprünglich]
-- Streichungen
-- Lange Überschriften
-- Geschichten
-- Listen
-- Rechnungen (mit Ergebnis)
-- Gliedernde Querstriche
-- Highlight (z.B. bei Überschriften)
-- Rote Highlights
-- Zitate
-- Hadith
+- **Einschübe**
+- **Listen**
+
+	Beispiel:
+	
+		~~~{.xml}
+		<list type="ordered">
+			<item>a butcher</item>
+			<item>a baker</item>
+			<item>a candlestick maker, with
+				<list type="bullets">
+					<item>rings on his fingers</item>
+					<item>bells on his toes</item>
+				</list>
+			</item>
+		</list>
+		~~~
+	
+	+ Siehe: <http://web.uvic.ca/lancenrd/martin/guidelines/ref-list.html>
+
+- **Rechnungen** (mit Ergebnis)
 
 
-## Wichtig:
+## 2. Strukturelemente: block level oder inline (z.B. Zitate, Auslassungen)
+ 	
+- **Zitate**
+
+	+ 	Lexicography has shown little sign of being affected by the
+ work of followers of J.R. Firth, probably best summarized in his
+ slogan, `<quote>`You shall know a word by the company it
+ keeps`</quote>`
+ 
+		`<ref>`(Firth, 1957)`</ref>`
+
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-quote.html>
+
+
+- **Koranverse**
+
+	Beispiel:
+	
+		~~~{.xml}
+		<text>
+			<front>
+				<head>1755</head>
+			</front>
+			<body>
+				<l>To make a prairie it takes a clover and one bee,</l>
+				<l>One clover, and a bee,</l>
+				<l>And revery.</l>
+				<l>The revery alone will do,</l>
+				<l>If bees are few.</l>
+			</body>
+		</text>
+		~~~
+	
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/VE.html>
+
+- **Chronogram**
+
+- **Hadith**
+
+## 2. Graphische Markierungen: inline (Überstriche, farbliche Hervorhebungen, Anführungszeichen)
+
+- **Überschriften**
+
+	+ Das `<head>` Element wird für jede Art Überschrift verwendet
+	+ `<head place="margin">`Secunda conclusio`</head>`
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-head.html>
+	
+- **Überstriche**
+- **Seitenzahlen und Umbrüche** (Seitenzahlen sind in [ ])
+	Beispiel:
+	
+		~~~{.xml}
+			<body>
+			<pb n="1" facs="page1.png"/>
+			<!-- page1.png contains an image of the page;
+            	the text it contains is encoded here -->
+			<p>
+			<!-- ... -->
+			</p>
+			<pb n="2" facs="page2.png"/>
+			<!-- similarly, for page 2 -->
+			<p>
+			<!-- ... -->
+			</p>
+		</body>
+		~~~
+	
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html>
+	
+- **Gliedernde Querstriche**
+- **Highlight** (z.B. bei Überschriften oder farbig)
+
+	+ `<hi rend="gothic">`And this Indenture further witnesseth`</hi>`
+that the said `<hi rend="italic">`Walter Shandy`</hi>`, merchant,
+in consideration of the said intended marriage ...
+	+ indered a man's proceedings who `<hi rend="underline">`had obtained all the letters to Mr Boyd`</hi>`
+
+	+ Beispiel @rendition:
+	 
+		~~~{.xml}
+			<head rendition="#ac #sc">
+				<lb/>To The <lb/>Duchesse <lb/>of <lb/>Newcastle, <lb/>On Her<lb/>
+				<hi rendition="#normal">New Blazing-World</hi>.
+			</head>
+			<!-- elsewhere... -->
+			<rendition xml:id="sc" scheme="css">font-variant: small-caps</rendition>
+			<rendition xml:id="normal" scheme="css">font-variant: normal</rendition>
+			<rendition xml:id="ac" scheme="css">text-align: center</rendition>
+			<rendition xml:id="red">color: red;</rendition>
+		~~~
+	
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hi.html>
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.rendition.html>
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/HD.html>
+
+- **Fußnoten**
+
+	Beispiel:
+	
+		~~~{.xml}
+		<l>(Diff'rent our parties, but with equal grace</l>
+		<l>The Goddess smiles on Whig and Tory race,</l>
+		<l>
+			<note type="imitation" place="bottom" anchored="false">
+				<bibl>Virg. Æn. 10.</bibl>
+				<quote>
+					<l>Tros Rutulusve fuat; nullo discrimine habebo.</l>
+					<l>—— Rex Jupiter omnibus idem.</l>
+				</quote>
+			</note>'Tis the same rope at sev'ral ends they twist,
+		</l>
+		~~~
+	
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html>
+
+- **Anführungszeichen**
+
+	Beispiel:
+	
+		~~~{.xml}
+		It is spelled <q>Tübingen</q> — to enter the
+		letter <q>u</q> with an umlaut hold down the <q>option</q> key and press
+		<q>0 0 f c</q>
+		~~~
+	
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-q.html>
+
+## 3. Editorische Eingriffe
+
+- **Seiten fehlen**
+- **Verbesserungen und Streichungen** (meist: \<verbessert in> [ursprünglich])
+
+	Beispiel:
+	
+		~~~{.xml}
+		<l>
+			<del rend="overtyped">Mein</del> Frisch
+			<del rend="overstrike" type="primary">schwebt</del> weht der Wind
+		</l>
+		~~~
+	
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-del.html>
+
+
+## 4. Named entities: Daten, Namen, Personen, Orte
 
 - **Datum** als Datum markieren (egal ob Chronogram)
 	+ `<date when="1807-06-09">`June 9th`</date>`
@@ -79,64 +266,18 @@ Es gibt:
  notAfter="1857-04-30">`Some time in
  March or April of 1857.`</birth>`
  	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html>
- 	+ Für nicht-gregorianische Kalender siehe die Dokumentation von [OpenArabicPE](https://www.github.com/openarabicpe) bzw. [Digital Muqtabas](https://www.github.com/tillgraller/digital-muqtabas) 
+ 	+ Für nicht-gregorianische Kalender siehe die Dokumentation von [OpenArabicPE](https://www.github.com/openarabicpe) bzw. [Digital Muqtabas](https://www.github.com/tillgraller/digital-muqtabas)
 
- 
 - **Personen**
 	+ That silly man
 `<name role="politician" type="person">`David Paul Brown`</name>` has suffered ...
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html> 
 
-- Einheiten im Text (einzelne Einträge)
-- **Gedichte**
-
-	Beispiel:
-	
-		<text>
-		<body>
-		<head>My Alba</head>
-		<lg>
-		<l>Now that I've wasted</l>
-		<l>five years in Manhattan</l>
-		<l>life decaying</l>
-		<l>talent a blank</l>
-		</lg>
-		<lg>
-		<l>talking disconnected</l>
-		<l>patient and mental</l>
-		<l>sliderule and number</l>
-		<l>machine on a desk</l>
-		</lg>
-		</body>
-		</text>
-	
-	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/VE.html>
-
-- Überstriche
 - **Orte** (auch Regionen usw.)
 	+ I never fly from `<name key="LHR" type="place">`Heathrow Airport`</name>`
 to
 <name key="FR" type="place">France</name>
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html> 
-
-- **Koranverse**
-
-	Beispiel:
-	
-		<text>
-		<front>
-		<head>1755</head>
-		</front>
-		<body>
-		<l>To make a prairie it takes a clover and one bee,</l>
-		<l>One clover, and a bee,</l>
-		<l>And revery.</l>
-		<l>The revery alone will do,</l>
-		<l>If bees are few.</l>
-		</body>
-		</text>
-	
-	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/VE.html>
 
 - **Namen**
 	+ `<persName>`
@@ -149,20 +290,15 @@ to
 	
 	Bsp:
 	
+		~~~{.xml}
 		<persName>
-		<forename type="first">Franklin</forename>
-		<forename type="middle">Delano</forename>
-		<surname>Roosevelt</surname>
+			<forename type="first">Franklin</forename>
+			<forename type="middle">Delano</forename>
+			<surname>Roosevelt</surname>
 		</persName>
-		
-
+		~~~
 	 
-	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html> 
-- Wenn oft Leute auf dem Markt => Gruppen von Leuten
+	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ND.html>
+	
+- **Gruppen von Leuten** (z.B. Wenn oft Leute auf dem Markt)
 
-# Vorgeschlagene Gliederung
-## 1. Strukturelemente: block-level (z.B. Text, Paragraph, Gedicht)
-## 2. Strukturelemente: block level oder inline (z.B. Zitate, Auslassungen)
-## 2. Graphische Markierungen: inline (Überstriche, farbliche Hervorhebungen, Anführungszeichen)
-## 3. Editorische Eingriffe
-## 4. Named entities: Personen, Orte
