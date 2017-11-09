@@ -3,7 +3,9 @@
    xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    exclude-result-prefixes="html"
+    >
     
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
     
@@ -14,33 +16,46 @@
             <xsl:apply-templates select="@* | node()"/>
         </xsl:copy>
     </xsl:template>
-    
-    <!-- add gap for missing text [...] -->
-    <xsl:template match="tei:p">
-        <xsl:analyze-string select="." regex="\[\.\.\.\]">
+     
+   <!-- Important note: in a first round we look solely at content of nodes and do NOT replace them entirely. This must be done in a second step -->
+   <!-- add pb tag for pagebreak -->
+    <xsl:template match="text()">
+        <xsl:analyze-string select="." regex="\[(\d+\D)\]|\[\.\.\.\]">
             <xsl:matching-substring>
-                <gap></gap>  
+                <xsl:message>
+                    <xsl:text>regex found</xsl:text>
+                </xsl:message>
+                <xsl:choose>
+                    <xsl:when test="matches(.,'\[(\d+\D)\]')">
+                        <xsl:message>
+                            <xsl:text>Found page break </xsl:text><xsl:value-of select="regex-group(1)"/>
+                        </xsl:message>
+                        <pb n="{regex-group(1)}"/>
+                    </xsl:when>
+                    <xsl:when test="matches(.,'\[\.\.\.\]')">
+                        <xsl:message terminate="no">
+                            <xsl:text>Found gap.</xsl:text>
+                        </xsl:message>
+                        <gap/>
+                    </xsl:when>
+                </xsl:choose>
             </xsl:matching-substring>
             <xsl:non-matching-substring>
-                <p>
-                  <xsl:value-of select="."/>
-                </p>
+                <xsl:value-of select="."/>
             </xsl:non-matching-substring>
         </xsl:analyze-string>
     </xsl:template>
-   
-   <!-- add pb tag for pagebreak -->
-    <xsl:template match="tei:p">
-        <xsl:analyze-string select="." regex="\[\d*\D\]">
-            <xsl:matching-substring>
-                <pb n="{current()}"/>
-            </xsl:matching-substring>
-            <xsl:non-matching-substring>
-                <p>
-                  <xsl:value-of select="."/>
-                </p>
-            </xsl:non-matching-substring>
-        </xsl:analyze-string>
+    
+    <!-- insufficient solution -->
+    <!--<xsl:template match="tei:p[matches(.,'\[\.\.\.\]')]">
+        <xsl:element name="tei:gap"/>
+    </xsl:template>-->
+    
+    <!-- Second step: replace all <p> that have only a single child which is a <tei:pb> with that child. -->
+    <xsl:template match="tei:p[count(child::node())=1][tei:pb]">
+        <xsl:element name="tei:pb">
+            <xsl:attribute name="n" select="tei:pb/@n"/>
+        </xsl:element>
     </xsl:template>
 
 </xsl:stylesheet>
