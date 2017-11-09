@@ -2,8 +2,7 @@
 <xsl:stylesheet version="2.0"
     xmlns="http://www.tei-c.org/ns/1.0"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    >
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
     
@@ -18,7 +17,7 @@
    <!-- Important note: in a first round we look solely at content of nodes and do NOT replace them entirely. This must be done in a second step -->
    <!-- add pb tag for pagebreak -->
     <xsl:template match="text()">
-        <xsl:analyze-string select="." regex="\[(\d+\D)\]|\[\.\.\.\]">
+        <xsl:analyze-string select="." regex="\[(\d+\D)\]|\[(\.\.\.)\]|\[(\D+)\]|&lt;(\D+)&gt;">
             <xsl:matching-substring>
                 <xsl:message>
                     <xsl:text>regex found</xsl:text>
@@ -35,6 +34,22 @@
                             <xsl:text>Found gap.</xsl:text>
                         </xsl:message>
                         <gap/>
+                    </xsl:when>
+                    <xsl:when test="matches(.,'\[\D*\]')">
+                        <xsl:message>
+                            <xsl:text>Foung deleted object</xsl:text>
+                        </xsl:message>
+                        <del>
+                            <xsl:value-of select="regex-group(3)"/>
+                        </del>
+                    </xsl:when>
+                    <xsl:when test="matches(.,'&lt;\D+&gt;')">
+                        <xsl:message terminate="no">
+                            <xsl:text>Found added object</xsl:text>
+                        </xsl:message>
+                        <add>
+                            <xsl:value-of select="regex-group(4)"/>
+                        </add>
                     </xsl:when>
                 </xsl:choose>
             </xsl:matching-substring>
