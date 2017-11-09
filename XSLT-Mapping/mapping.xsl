@@ -17,6 +17,7 @@
    <!-- Important note: in a first round we look solely at content of nodes and do NOT replace them entirely. This must be done in a second step -->
    <!-- add pb tag for pagebreak -->
     <xsl:template match="text()">
+        <!-- searching for non-digits is probably not the best idea for most cases! it would be better to check for anything (.+?) between markers of deletions and additions -->
         <xsl:analyze-string select="." regex="\[(\d+\D)\]|\[(\.\.\.)\]|\[(\D+)\]|&lt;(\D+)&gt;">
             <xsl:matching-substring>
                 <xsl:message>
