@@ -18,7 +18,7 @@
    <!-- add pb tag for pagebreak -->
     <xsl:template match="text()">
         <!-- searching for non-digits is probably not the best idea for most cases! it would be better to check for anything (.+?) between markers of deletions and additions -->
-        <xsl:analyze-string select="." regex="\[(\d+\D)\]|\[(\.\.\.)\]|\[(\D+)\]|&lt;(\D+)&gt;">
+        <xsl:analyze-string select="." regex="\[(\d+\D)\]|\[(\.\.\.)\]|\[(.+)\]|&lt;(.+)&gt;|(×)|(\d+)|(.+)//(.+)//(.+)//(.+)//(.+)//(.+)|(.+)//(.+)//(.+)//(.+)//(.+)|(.+)//(.+)//(.+)//(.+)|(.+)//(.+)//(.+)|(.+)//(.+)">
             <xsl:matching-substring>
                 <xsl:message>
                     <xsl:text>regex found</xsl:text>
@@ -36,7 +36,7 @@
                         </xsl:message>
                         <gap/>
                     </xsl:when>
-                    <xsl:when test="matches(.,'\[\D*\]')">
+                    <xsl:when test="matches(.,'\[.+\]')">
                         <xsl:message>
                             <xsl:text>Foung deleted object</xsl:text>
                         </xsl:message>
@@ -44,13 +44,84 @@
                             <xsl:value-of select="regex-group(3)"/>
                         </del>
                     </xsl:when>
-                    <xsl:when test="matches(.,'&lt;\D+&gt;')">
+                    <xsl:when test="matches(.,'&lt;.+&gt;')">
                         <xsl:message terminate="no">
                             <xsl:text>Found added object</xsl:text>
                         </xsl:message>
                         <add>
                             <xsl:value-of select="regex-group(4)"/>
                         </add>
+                    </xsl:when>                
+                    <xsl:when test="matches(.,'(×)')">
+                        <xsl:message terminate="no">
+                            <xsl:text>Found graphic</xsl:text>
+                        </xsl:message>
+                        <graphic>
+                            <xsl:value-of select="regex-group(5)"/>
+                        </graphic>
+                    </xsl:when>
+                    <xsl:when test="matches(.,'\d+')">
+                        <xsl:message terminate="no">
+                            <xsl:text>Found number</xsl:text>
+                        </xsl:message>
+                        <num value="{current()}">
+                            <xsl:value-of select="regex-group(6)"/>
+                        </num>
+                    </xsl:when>
+                    <xsl:when test="matches(.,'(.+)//(.+)//(.+)//(.+)//(.+)//(.+)')">
+                        <xsl:message terminate="no">
+                            <xsl:text>Found poem</xsl:text>
+                        </xsl:message>
+                        <l type="">
+                            <seg><xsl:value-of select="regex-group(7)"/></seg>
+                            <seg><xsl:value-of select="regex-group(8)"/></seg>
+                            <seg><xsl:value-of select="regex-group(9)"/></seg>
+                            <seg><xsl:value-of select="regex-group(10)"/></seg>
+                            <seg><xsl:value-of select="regex-group(11)"/></seg>
+                            <seg><xsl:value-of select="regex-group(12)"/></seg>
+                        </l>
+                    </xsl:when>
+                    <xsl:when test="matches(.,'(.+)//(.+)//(.+)//(.+)//(.+)')">
+                        <xsl:message terminate="no">
+                            <xsl:text>Found poem</xsl:text>
+                        </xsl:message>
+                        <l type="">
+                            <seg><xsl:value-of select="regex-group(13)"/></seg>
+                            <seg><xsl:value-of select="regex-group(14)"/></seg>
+                            <seg><xsl:value-of select="regex-group(15)"/></seg>
+                            <seg><xsl:value-of select="regex-group(16)"/></seg>
+                            <seg><xsl:value-of select="regex-group(17)"/></seg>
+                        </l>
+                    </xsl:when>
+                    <xsl:when test="matches(.,'(.+)//(.+)//(.+)//(.+)')">
+                        <xsl:message terminate="no">
+                            <xsl:text>Found poem</xsl:text>
+                        </xsl:message>
+                        <l type="">
+                            <seg><xsl:value-of select="regex-group(18)"/></seg>
+                            <seg><xsl:value-of select="regex-group(19)"/></seg>
+                            <seg><xsl:value-of select="regex-group(20)"/></seg>
+                            <seg><xsl:value-of select="regex-group(21)"/></seg>
+                        </l>
+                    </xsl:when>
+                    <xsl:when test="matches(.,'(.+)//(.+)//(.+)')">
+                        <xsl:message terminate="no">
+                            <xsl:text>Found poem</xsl:text>
+                        </xsl:message>
+                        <l type="">
+                            <seg><xsl:value-of select="regex-group(22)"/></seg>
+                            <seg><xsl:value-of select="regex-group(23)"/></seg>
+                            <seg><xsl:value-of select="regex-group(24)"/></seg>
+                        </l>
+                    </xsl:when>
+                    <xsl:when test="matches(.,'(.+)//(.+)')">
+                        <xsl:message terminate="no">
+                            <xsl:text>Found poem</xsl:text>
+                        </xsl:message>
+                        <l type="">
+                            <seg><xsl:value-of select="regex-group(25)"/></seg>
+                            <seg><xsl:value-of select="regex-group(26)"/></seg>
+                        </l>
                     </xsl:when>
                 </xsl:choose>
             </xsl:matching-substring>
