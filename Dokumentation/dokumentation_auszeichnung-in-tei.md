@@ -60,10 +60,33 @@ date: 2017-11-06 10:22:16 +0200
 				</lg>
 			</body>
 		</text>
-		~~~
+		~~~		
+	
+	+ In arabischen Gedichten kommen oft Halbzeilen vor: `<seg>`
+
+	Beispiel:
+	
+		~~~{.xml}
+		<text>
+			<body>
+				<l type = "bayt">
+					<seg>Now that I've wasted</seg>
+					<seg>five years in Manhattan</seg>
+					<seg>life decaying</seg>
+					<seg>talent a blank</seg>
+				</l>
+				<l>
+					<seg>talking disconnected</seg>
+					<seg>patient and mental</seg>
+					<seg>sliderule and number</seg>
+					<seg>machine on a desk</seg>
+				</l>
+			</body>
+		</text>
+		~~~	
+	
 	
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/VE.html>
-	+ In arabischen Gedichten kommen oft Halbzeilen vor: `<seg>`
 
 - **Tabellen**
 	+ `<table>`
@@ -240,17 +263,6 @@ in consideration of the said intended marriage ...
 	
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html>
 
-- **Anführungszeichen**
-
-	Beispiel:
-	
-		~~~{.xml}
-		It is spelled <q>Tübingen</q> — to enter the
-		letter <q>u</q> with an umlaut hold down the <q>option</q> key and press
-		<q>0 0 f c</q>
-		~~~
-	
-	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-q.html>
 
 ## 3. Editorische Eingriffe
 
