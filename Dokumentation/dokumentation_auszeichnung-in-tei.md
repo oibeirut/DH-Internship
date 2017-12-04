@@ -16,8 +16,31 @@ date: 2017-11-06 10:22:16 +0200
 ## 1. Strukturelemente: block-level (z.B. Text, Paragraph, Gedicht)
 
 - **Einheiten im Text** (einzelne Einträge) / **Geschichten**
+	+ Es bestehen grundsätzlich zwei verschiedene Möglichkeiten Sinneinheiten in einem Dokument zu modellieren: als Abschnitte innerhalb eines Textes oder als Kollation mehrere Texte in einem Dokument. Ersteres sollte einfach als `<div>` modelliert werden, letzteres lässt sich entweder mit `<floatingText>` oder `TEI/text/group/text` modellieren.
 
-	Beispiel:
+	Beispiel 2:
+	
+		~~~{.xml}	
+		<text>
+			<body>
+			<!-- Section on Alexander Pope starts -->
+				<div>
+				<!-- section on something completely different -->
+				<floatingText>
+					<text>
+						<body>
+							<div>
+							</div>
+						</body>
+					</text>
+				</floatingText>
+				<!-- Section on Alexander Pope continues -->
+				</div>
+			</body>
+		</text>
+		~~~
+
+	Beispiel 3:
 	
 		~~~{.xml}
 		<text>
@@ -60,7 +83,7 @@ date: 2017-11-06 10:22:16 +0200
 				</lg>
 			</body>
 		</text>
-		~~~		
+		~~~
 	
 	+ In arabischen Gedichten kommen oft Halbzeilen vor: `<seg>`
 
@@ -69,7 +92,7 @@ date: 2017-11-06 10:22:16 +0200
 		~~~{.xml}
 		<text>
 			<body>
-				<l type = "bayt">
+				<l type="bayt">
 					<seg>Now that I've wasted</seg>
 					<seg>five years in Manhattan</seg>
 					<seg>life decaying</seg>
@@ -83,7 +106,7 @@ date: 2017-11-06 10:22:16 +0200
 				</l>
 			</body>
 		</text>
-		~~~	
+		~~~
 	
 	
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/VE.html>
@@ -155,7 +178,7 @@ date: 2017-11-06 10:22:16 +0200
 
 - **Koranverse**
 
-Könnten wir als Verse betrachten.
+	+ Könnten wir als Verse betrachten.
 
 	Beispiel:
 	
@@ -173,7 +196,7 @@ Könnten wir als Verse betrachten.
 			</body>
 		</text>
 		~~~
-	
+
 	+ Siehe: <http://www.tei-c.org/release/doc/tei-p5-doc/en/html/VE.html>
 
 - **Chronogram**
