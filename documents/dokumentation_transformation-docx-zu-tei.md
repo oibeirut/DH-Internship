@@ -45,7 +45,7 @@ Fehler:
 - Zeile 412: "## Benötigte technische Grundsätze" -> vermutlich bereits bei der Überführung des Markdown-Dokuments in Word entstanden
 - Zeile 495: "[^siehe dazu: IDE]:"
 
---> Bei der Transformation mit einer .odt Datei werden Überschriften mit \<div> und <head> ausgezeichnet.
+--> Bei der Transformation mit einer .odt Datei werden Überschriften mit `<div>` und `<head>` ausgezeichnet.
 
 **Versuch 2** mit einer **arabischsprachigen Datei** `test\_arabic.docx`
 
@@ -73,13 +73,13 @@ Pandoc ist ein Kommandozeilenbasiertes Programm und besitzt kein Interface.
 Die Installation ist sehr einfach.
 
 Der Befehl für die Konvertierung lautet:
-`pandoc \<filename> -f docx -t tei -o \<output_filename.xml>`
+`pandoc <filename> -f docx -t tei -o <output_filename.xml>`
 
 Dabei wird das Dokument sehr schnell in TEI simple konvertiert. Es handelt sich dabei um den Standard der einfachen Textverarbeitung. Das vorliegende arabische Dokument weist wenige Formatierungen auf, wodurch der Einsatz von TEI Simple durchaus erwähnt werden sollte.
 
 **Anmerkungen:**
 
-- Überschriften werden nicht erfasst (nur als \<p>)
+- Überschriften werden nicht erfasst (nur als `<p>`)
 
 ## Mit OxGarage:
 
@@ -113,8 +113,8 @@ Word-Dokument in LibreOffice als RTF abspeichern und anschließend in Tustep öf
 - listChange könnte ausführlicher sein (steht nicht drin was gemacht wurde)
 - Attributwerte beinhalten Leerzeichen
 - Fußnoten in ordnung
-- Tabellen: nicht jeder Text ist in \<p>
-- stylesheet \<output indent ="no"> muss auf yes gestellt werden damit Text eingerückt wird (stylesheet auf github)
+- Tabellen: nicht jeder Text ist in `<p>`
+- stylesheet `<output indent ="no">` muss auf yes gestellt werden damit Text eingerückt wird (stylesheet auf github)
 
 ### OxGarage
 
@@ -126,7 +126,7 @@ Word-Dokument in LibreOffice als RTF abspeichern und anschließend in Tustep öf
 - Wurzelknoten fehlt
 - Für wellformed und valid: -s dranhängen (standalone)
 -> Der Befehl für die Konvertierung lautet:
-`pandoc \<filename> -f docx -t tei -o \<output_filename.xml -s>`
+`pandoc <filename> -f docx -t tei -o <output_filename.xml -s>`
 - TEI Schema fehlt
 - Datei selber keine valide TEI (Title-Statement, publication leer)
 - Schaut sich Struktur an (fügt \<div> hinzu wenn nötig)
@@ -140,9 +140,9 @@ Word-Dokument in LibreOffice als RTF abspeichern und anschließend in Tustep öf
 # Was wir brauchen:
 
 - Leerzeichen ersetzen aus Attributwerten (z.B. Bindestrich oder camelCase)
-- Gliedernde Struktur in \<div> (dort wo heading ist)
+- Gliedernde Struktur in `<div>` (dort wo heading ist)
 - Flacher Input muss in verschachtelte Output-Struktur überführt werden
-- Verschachtelungs-Level hängt an Überschriften in Word (z.B. \<rend="heading 4">)
+- Verschachtelungs-Level hängt an Überschriften in Word (z.B. `<rend="heading 4">`)
 - Inline CSS vom Text trennen (soll im TEI-header landen)
 - Überschriften- und Inhaltszeilen in Tabellen festlegen
 - Es wurde versucht die Elemente grafisch nachzubauen mithilfe von Tabellen (haben z.B. nur eine Spalte)
