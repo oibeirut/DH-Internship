@@ -79,6 +79,12 @@ oder only shaped letters http://mpcabd.xyz/python-arabic-text-reshaper/
 ### 1. Recherche: Inwiefern betrifft uns dieses Problem.
 
 - Scan aller Dateien auf ihren Unicode-Gebrauch
+     + check out [International Components for Unicode](https://en.wikipedia.org/wiki/International_Components_for_Unicode)
+     + tools: [UnicodeChecker](http://earthlingsoft.net/UnicodeChecker/) for macOS
+     + terminal:
+          * `uconv -f utf8 -t utf8 -x nfc`
+     + XPath functions:
+          * `normalize-unicode()`: normalizes to NFC, which is not what we are looking for
 - Scripte müssen geschrieben werden um die Analyse von XML-Dateien (Word, TEI) vornehmen zu können
      + es gab auf der TEI-Mailingliste im Februar 2015 einen lange Konversation zu "Unicode Normalization",  diese muss zusammengefasst werden. Das Archiv findet sich [hier](https://listserv.brown.edu/archives/cgi-bin/wa?A0=TEI-L)
      
