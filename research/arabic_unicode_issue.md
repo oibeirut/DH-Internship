@@ -5,8 +5,7 @@ date: 2018-09-10
 ---
 
 # The Arabic Unicode issue
----
----
+## Das Problem
 
 **Allgemein:** Arabische Schriftzeichen unterliegen (zumindest im Unicode) einer gewissen Inkonsistenz. Scheinbar gleichen Zeichen können abhängig von [Betriebssystem](https://en.wikipedia.org/wiki/Arabic_keyboard) oder Keyboard unterschiedliche Unicode-Codepoints zugeordnet sein. 
 Aktuell: Unicode 11.0.0 (seit Juni 2018)
@@ -17,6 +16,7 @@ Erfahrungswerte auf diesem Gebiet scheinen zu fehlen. Meine Recherche konnte bis
 Mögliche Lösung: Doppeldeutigkeiten identifizieren und kleines Programm zur Angleichung schreiben? 
 
 ### Arabische Unicode-Blöcke
+
 - [Arabic](https://beta.codepoints.net/arabic): Codepoints U+0600 bis U+06FF, Standardbuchstaben und -diakritika, indische Zahlschrift (255 characters).
 - [Arabisch, Ergänzung](https://de.wikipedia.org/wiki/Unicodeblock_Arabisch,_Erg%C3%A4nzung) (Arabic Supplement): Codepoints 0750 bis 077F, arabische Zeichen, die teilweise nicht mehr in Benutzung sind, für verschiedene Minderheitensprachen, Zeichen aus Schriften für afrikanische Sprachen (48 characters).
 - [Arabisch, erweitert-A](https://de.wikipedia.org/wiki/Unicodeblock_Arabisch,_erweitert-A) (Arabic Extended-A) Codepoints U+08A0 bis U+08FF (74 characters).
@@ -74,3 +74,11 @@ Im Oxygen XML Editor: Optionen --> Einstellungen --> Editor --> Vorlagen --> Cod
      }
 
 oder only shaped letters http://mpcabd.xyz/python-arabic-text-reshaper/ 
+
+## Lösung
+### 1. Recherche: Inwiefern betrifft uns dieses Problem.
+
+- Scan aller Dateien auf ihren Unicode-Gebrauch
+- Scripte müssen geschrieben werden um die Analyse von XML-Dateien (Word, TEI) vornehmen zu können
+     + es gab auf der TEI-Mailingliste im Februar 2015 einen lange Konversation zu "Unicode Normalization",  diese muss zusammengefasst werden. Das Archiv findet sich [hier](https://listserv.brown.edu/archives/cgi-bin/wa?A0=TEI-L)
+     
