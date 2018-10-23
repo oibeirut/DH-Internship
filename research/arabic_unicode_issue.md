@@ -1,4 +1,4 @@
----
+﻿---
 title: "The Arabic Unicode issue"
 author: Lena Hofmann
 date: 2018-09-10
@@ -13,7 +13,9 @@ Aktuell: Unicode 11.0.0 (seit Juni 2018)
 
 **Frage:** Welche Konsequenzen hat das unter Umständen für die Digitalisierungsvorhaben des OIB? In Oxygen XML werden die Unicode-Codepoints für jedes arabische Schriftzeichen hinterlegt.
 
-Unicode Converter: [BabbleStone](http://www.babelstone.co.uk/Software/BabelPad.html)
+Unicode Converter Windows: [BabbleStone](http://www.babelstone.co.uk/Software/BabelPad.html)
+Unicode Converter Mac: [UnicodeChecker](http://earthlingsoft.net/UnicodeChecker/)
+
 
 ### Arabische Unicode-Blöcke
 - [Arabic](https://beta.codepoints.net/arabic): Codepoints U+0600 bis U+06FF, Standardbuchstaben und -diakritika, indische Zahlschrift (255 characters).
