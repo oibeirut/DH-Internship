@@ -1,8 +1,10 @@
-﻿---
+---
 title: "create new ediarum project"
 author: Lena Hofmann
 date: 2018-23-10
 ---
+**ZUERST:** Download des [Oxgen XML-Editors](https://www.oxygenxml.com/download_oxygenxml_editor.html) und der aktuellsten stabilen Version von [ediarum](https://github.com/ediarum)!
+
 # Einrichtung von ediarum für ein spezifisches Projekt
 
 Basierend auf Oxygen 20.1 und ediarum 0.26.0
@@ -76,7 +78,6 @@ Um die Stile aus standard.css auch in die Textansicht zu erben:
 
 - Im Ordner »css« die Datei »onlyText.css« anlegen, mit dem Inhalt »@import url("standard.css");«
 - »onlyText.css« in den Framework-Einstellungen wie oben hinzufügen – nur diesmal als Titel »Textansicht«
-
 
 ##### Projektspezifisches Schema zuweisen
 
