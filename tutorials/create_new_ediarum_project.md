@@ -1,5 +1,5 @@
----
-title: "ediarum Projekt anlegen"
+﻿---
+title: "create new ediarum project"
 author: Lena Hofmann
 date: 2018-23-10
 ---
@@ -81,3 +81,7 @@ Um die Stile aus standard.css auch in die Textansicht zu erben:
 ##### Projektspezifisches Schema zuweisen
 
 - In Dokumenttypen beim entsprechenden Framwork unter "Schema" nach folgendem Muster das projektspezifische Schema einbinden: ${framework}/schemata/ediarum_hkw_register.rng. Dann unter "Validierung" über das "+" das spezifische Schema als neues Validierungsschema zuweisen.
+
+##### ediarum.jar in Framework einfügen
+- Das ediarum.jar File (https://github.com/ediarum) downloaden und in erstellten Framework-Ordner einfügen. Über **Dokumenttyp-Zuordnungen** unter **Klassen-Pfad** Pfad eingeben/ überprüfen.
+- ACHTUNG: Unter **Verknüpfungsregeln** darauf achten, dass Attribute leer / * sind.
