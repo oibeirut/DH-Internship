@@ -269,6 +269,18 @@ Siehe hierzu: Grallert, Till: Technische Aspekte, oder: the D in Digital Humanit
 + Etablierte **open source** Software verwenden. Am besten mit einer großen Community um Abhängigkeiten von einzelnen Anbietern zu vermeiden.
 + Alle verwendeten Formate müssen sowohl **menschen-** als auch **maschinenlesbar** sein. Somit bleibt das Produzierte (jedoch ohne Funktionalitäten) selbst auf Papier verständlich.
 
+## (Retro) Digitalisierung
+In Absprache mit der Martin-Luther-Universität Halle-Wittenberg werden die zwei Reihen [Bibliotheca Islamica](http://menadoc.bibliothek.uni-halle.de/search?operation=searchRetrieve&query=%28vl.series.idn%3D130734632%20or%20vl.series%3D%22Bibliotheca%20islamica%22%29%20and%20vl.domain%3Dssg%20sortBy%20dc.date%2Fdesc) und [Beiruter Texte und Studien](http://menadoc.bibliothek.uni-halle.de/search?operation=searchRetrieve&query=%28vl.series.idn%3D130106933%20or%20vl.series%3D%22Beiruter%20Texte%20und%20Studien%22%29%20and%20vl.domain%3Dmenadocihd%20sortBy%20dc.date%2Fdesc) als Digitalisate auf der Plattform MENAdoc veröffentlicht und archiviert.
+
+Die Digitalisate sind frei zugänglich und mit einer permanenten URL ausgezeichnet.
+
+Die Reihe [Orient Institut Studies](http://www.perspectivia.net/publikationen/orient-institut-studies/1-2012) ist auf der Publikationsplattform perspectivia.net der Max-Weber-Stiftung veröffentlicht.
+
+Siehe dazu:
+
+- [Die MENAdoc-Sammlung](http://menadoc.bibliothek.uni-halle.de/)
+- [perspectivia.net](http://www.perspectivia.net/)
+
 
 # 4. Rahmenbedingungen
 

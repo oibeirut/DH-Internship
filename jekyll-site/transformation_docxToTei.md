@@ -1,10 +1,9 @@
 ---
-
+layout: default
 title: "Transformation einer .docx Datei in eine TEI P5-XML Datei"
 author: Julia Dolhoff
 editor: Till Grallert
 date: 2017-10-19
-
 ---
 
 # Transformation einer .docx Datei in eine TEI P5-XML Datei
@@ -12,6 +11,8 @@ date: 2017-10-19
 **Die Ergebnisse der Transformationen sind zu finden unter:**
 
 `/Praktikanten OIB/DH-Praktikum/Transformation_Dateien/`
+
+oder auf der Github <!-- hier noch den Link einfügen! --> Seite
 
 ## Mit Oxygen XML Editor:
 
@@ -152,3 +153,7 @@ Word-Dokument in LibreOffice als RTF abspeichern und anschließend in Tustep öf
 ## Anforderung an Word
 
 - Stile wie bspw. Überschriften, Seitenumbruch
+
+---
+
+# &#8627; [Zurück zur Startseite](./)
