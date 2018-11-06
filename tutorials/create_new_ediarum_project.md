@@ -3,15 +3,24 @@ title: "create new ediarum project"
 author: Lena Hofmann
 date: 2018-23-10
 ---
-**ZUERST:** Download des [Oxgen XML-Editors](https://www.oxygenxml.com/download_oxygenxml_editor.html) und der aktuellsten stabilen Version von [ediarum](https://github.com/ediarum)!
+
+# Benötigte Komponenten
+
+1. Download und Installation des [oXygen XML-Editors](https://www.oxygenxml.com/download_oxygenxml_editor.html)
+2. Download und Installation der XML Datenbank [eXistDB](). 
+3. Downlaod der aktuellsten stabilen Version von [ediarum](https://github.com/ediarum) und seinen Komponenten
+    - [ediarum.DB](https://github.com/ediarum/ediarum.DB)
+    - [ediarum.JAR](https://github.com/ediarum/ediarum.JAR)
+    - [ediarum.BASE.edit](https://github.com/ediarum/ediarum.BASE.edit)
+    - [ediarum.REGISTER.edit](https://github.com/ediarum/ediarum.REGISTER.edit)
 
 # Einrichtung von ediarum für ein spezifisches Projekt
 
 Basierend auf Oxygen 20.1 und ediarum 0.26.0
 Auf folgende Orte / Menüs wird durchgehend Bezug genommen:
 
-- Framework-Ordner: Programme/Oxygen/frameworks/ediarum_<projektname> – dieser Ordner wird im zweiten Schritt angelegt und erhält in Folge noch Unterordner
-- Einstellungen: Menü »Optionen« > »Einstellungen…«
+- Framework-Ordner: `Programme/Oxygen/frameworks/ediarum_<projektname>` – dieser Ordner wird im zweiten Schritt angelegt und erhält in Folge noch Unterordner
+- Einstellungen: Menü `Optionen > Einstellungen…`
 - Framework-Einstellungen: Menü »Optionen« > »Einstellungen…« > »Dokumenttypen-Zuordnung«, dann in der Liste projektspezifische Erweiterung »ediarum.<projektname>« (wird im zweiten Schritt erstellt) markieren, Knopf »Bearbeiten«
 
 
