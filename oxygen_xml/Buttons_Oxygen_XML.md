@@ -8,43 +8,49 @@ date: 2018-01-11
 
 ### Text
 
-| Button        | deutsch                                   |english        |Anmerkung      |
-| ------------- |:-----------------------------------------:|:-------------:|:-------------:|
-|               |Neuer Absatz                               |new paragraph  |
-|               |Zeilenumbruch                              |line break     |
-|               |Listen                                     |lists          |
-|               |Tabelle                                    |table / chart  |
-|               |Anmerkung d. Autors                        |               |
-|               |Zeichnung                                  |drawing / subscription|
-|               |*Folio- u. Seitenwechsel*                  |               | *streichen?*   |
-|               |Unterstrichen                              |underline      |
-|               |Hochstellen                                |superscript    |
-|               |Streichung                                 |deletion       |
-|               |Korrektur durch Autor                      |author's correction|
-|               |Unsichere Lesart                           | 		    |
-|               |nicht entzifferbar, Schäden und Auslassungen|undecipherable|
-|               |nicht entzifferbar, durchgestrichen        |undecipherable |
-|               |Ergänzung                                  |supplement     |
-|               |Fehlendes Wort                             |missing word   |
-|               |Streichung d. Bearbeiter                   |editor's deletion|
-|               |Korrekturen                                |corrections    |
-|               |Sachanmerkung einfügen                     |               |
-|               |Verweise                                   |references     |
-|               |Datum                                      |date           |
-|               |Sprache und Schhriftart                    |language and font|
-|               |Textstellen indizieren                     |index          |
-|               |Namen kennzeichnen                         |               |
+| Button |                   deutsch                    |        english         |  Anmerkung   |    tag / attribute combinations    |
+|--------|----------------------------------------------|------------------------|--------------|------------------------------------|
+|        | Neuer Absatz                                 | new paragraph          |              | p                                  |
+|        | Zeilenumbruch                                | line break[^1]         |              | lb                                 |
+|        | Listen                                       | lists                  |              | list                               |
+|        | Tabelle                                      | table / chart          |              | table                              |
+|        | Anmerkung d. Autors                          | Author's note          |              | note (plus attribute?)             |
+|        | Zeichnung                                    | drawing / subscription |              | graphic                            |
+|        | *Folio- u. Seitenwechsel*                    | page break[^1]         | *streichen?* | pb                                 |
+|        | Unterstrichen                                | underline              |              | hi    ?                            |
+|        | Hochstellen                                  | superscript            |              |                                    |
+|        | Streichung                                   | deletion               |              | del                                |
+|        | Korrektur durch Autor                        | author's correction    |              | choice/corr ?                      |
+|        | Unsichere Lesart                             | uncertain reading      |              |                                    |
+|        | nicht entzifferbar, Schäden und Auslassungen | undecipherable         |              |                                    |
+|        | nicht entzifferbar, durchgestrichen          | undecipherable         |              |                                    |
+|        | Ergänzung                                    | supplement             |              | add                                |
+|        | Fehlendes Wort                               | missing word           |              | gap                                |
+|        | Streichung d. Bearbeiter                     | editor's deletion      |              |                                    |
+|        | Korrekturen                                  | corrections            |              |                                    |
+|        | Sachanmerkung einfügen                       |                        |              |                                    |
+|        | Verweise                                     | references             |              |                                    |
+|        | Datum                                        | date                   |              | date                               |
+|        | Sprache und Schriftart                       | language and font      |              |                                    |
+|        | Textstellen indizieren                       | index                  |              |                                    |
+|        | Namen kennzeichnen                           |                        |              | name, persName, placeName, orgName |
+|        |                                              |                        |              |                                    |
+
+[^1]: rather "beginning"
 
 ##### Zeilenumbruch / line break
+
 - Zeilenumbruch
 - Zeilenumbruch im Wort
 - Zeilenumbruch mit Trennzeichen
 
 ##### Listen / lists
+
 - Liste einfügen
 - Listenpunkt einfügen
 
 ##### Tabelle / table
+
 - Tabelle einfügen
 - Zeile einfügen
 - Spalte einfügen
@@ -53,10 +59,12 @@ date: 2018-01-11
 - Zeile Löschen
 
 ##### Korrekturen / corrections
+
 - Korrektur durch den Herausgeber
 - Normalisierte Streichung
 
 ##### Verweise / references
+
 - Verweisziel markieren
 - Verweis auf Brief oder Textstelle
 - Verweis auf Sachanmerkung
@@ -65,20 +73,24 @@ date: 2018-01-11
 - Brief/ Dokument ist Beilage zu...
 
 ##### Datum / date
+
 - Genaues Datum: Julianisch / Gregorianisch / Hijri / Osmanischer Finanzkalender
 - Genaue Zeitspanne
 - Ungefährer Zeitraum
 
 ##### Sprache und Schriftart / language and font
+
 - Schriftartwechsel
 - Fremdsprachiger Textabschnitt
 
 ##### Textstelle indizieren / index
+
 - Personenindex
 - Ortsindex
 - Werkindex
 
 ##### Namen kennzeichnen
+
 - Personenname
 - Organisationsname
 - Ortsname
@@ -86,6 +98,7 @@ date: 2018-01-11
 - Sachbegriff
 
 ### Metadaten
+
 - Digitalisate
 - Beschreibung des Manuskripts
 - Überlieferung: Druck
@@ -102,9 +115,11 @@ date: 2018-01-11
 - Mitarbeiter
 
 ### Website
+
 *Nicht verfügbar, da NOCH keine online Datenbank existiert.*
 
 ### Sonderzeichen
+
 - Symbole
     - Buchstaben
     - Bruchzahlen
