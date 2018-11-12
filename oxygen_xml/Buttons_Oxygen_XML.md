@@ -41,20 +41,21 @@ date: 2018-01-11
 [^1]: rather "beginning"
 
 ## Optionen für einzelne Knöpfe
-### Zeilenumbruch / line break
+### 1. Phänomene im Text
+#### Zeilenumbruch / line break
 
 - Zeilenumbruch | line beginning
 - Zeilenumbruch im Wort: *wird nicht gebraucht*
 - Zeilenumbruch mit Trennzeichen: *wird nicht gebraucht*
 
-### Listen | lists
+#### Listen | lists
 
 *Standardverhalten: kann so bleiben*
 
 - Liste einfügen | add list
 - Listenpunkt einfügen | add / insert list item
 
-### Tabelle | table
+#### Tabelle | table
 
 *Standardverhalten: kann so bleiben*
 
@@ -65,13 +66,13 @@ date: 2018-01-11
 - Spalte löschen | delete column
 - Zeile Löschen | delete row
 
-### Korrekturen | corrections
+#### Korrekturen | corrections
 
 - *add*: Korrektur durch den/die Autor_in
 - Korrektur durch den Herausgeber
 - Normalisierte Streichung
 
-### Verweise | references
+#### Verweise | references
 
 - Verweisziel markieren
 - Verweis auf Brief oder Textstelle
@@ -80,26 +81,26 @@ date: 2018-01-11
 - Verweis auf Beilage
 - Brief/ Dokument ist Beilage zu...
 
-### Datum | date
+#### Datum | date
 
 - Genaues Datum: Julianisch / Gregorianisch / Hijri / Osmanischer Finanzkalender
 - Genaue Zeitspanne
 - Ungefährer Zeitraum
 
-### Sprache und Schriftart | language and script
+#### Sprache und Schriftart | language and script
 
 - Schriftartwechsel: *wird nicht gebraucht*
 - Fremdsprachiger Textabschnitt: `<foreign>`
 - Handwechsel
 - *add* Sprache und Schrit angeben: `@xml:lang`, die Werte können von OpenArabicPE übernommen werden
 
-### Textstelle indizieren | index
+#### Textstelle indizieren | index
 
 - Personenindex
 - Ortsindex
 - Werkindex
 
-### Namen kennzeichnen
+#### Namen kennzeichnen
 
 - Personenname: `<persName>`
 - Organisationsname: `<orgName>`
@@ -107,7 +108,7 @@ date: 2018-01-11
 - Werktitel: `<title>`, potentiell innerhalb eines `<bibl>`
 - Sachbegriff
 
-### Metadaten
+### 2. Beschreibung des Textes im teiHeader / Metadaten
 
 - Digitalisate
 - Beschreibung des Manuskripts
