@@ -1,12 +1,14 @@
 ﻿---
 title: "Buttons Oxygen XML"
-author: Lena Hofmann
+author: 
+    - Lena Hofmann
+    - Till Grallert
 date: 2018-01-11
 ---
 
-# Buttons Oxygen XML Editor
+# Buttons Oxygen XML Editor und auszuzeichnende Elemente
 
-### Text
+## Aktuelle Knöpfe im Ediarum-Interface
 
 | Button |                   deutsch                    |        english         |  Anmerkung   |    tag / attribute combinations    |
 |--------|----------------------------------------------|------------------------|--------------|------------------------------------|
@@ -38,32 +40,38 @@ date: 2018-01-11
 
 [^1]: rather "beginning"
 
-##### Zeilenumbruch / line break
+## Optionen für einzelne Knöpfe
+### Zeilenumbruch / line break
 
-- Zeilenumbruch
-- Zeilenumbruch im Wort
-- Zeilenumbruch mit Trennzeichen
+- Zeilenumbruch | line beginning
+- Zeilenumbruch im Wort: *wird nicht gebraucht*
+- Zeilenumbruch mit Trennzeichen: *wird nicht gebraucht*
 
-##### Listen / lists
+### Listen | lists
 
-- Liste einfügen
-- Listenpunkt einfügen
+*Standardverhalten: kann so bleiben*
 
-##### Tabelle / table
+- Liste einfügen | add list
+- Listenpunkt einfügen | add / insert list item
 
-- Tabelle einfügen
-- Zeile einfügen
-- Spalte einfügen
-- Zeilen verbinden
-- Spalte löschen
-- Zeile Löschen
+### Tabelle | table
 
-##### Korrekturen / corrections
+*Standardverhalten: kann so bleiben*
 
+- Tabelle einfügen | add table
+- Zeile einfügen | add / insert row
+- Spalte einfügen | add / insert column
+- Zeilen verbinden | join cells
+- Spalte löschen | delete column
+- Zeile Löschen | delete row
+
+### Korrekturen | corrections
+
+- *add*: Korrektur durch den/die Autor_in
 - Korrektur durch den Herausgeber
 - Normalisierte Streichung
 
-##### Verweise / references
+### Verweise | references
 
 - Verweisziel markieren
 - Verweis auf Brief oder Textstelle
@@ -72,29 +80,31 @@ date: 2018-01-11
 - Verweis auf Beilage
 - Brief/ Dokument ist Beilage zu...
 
-##### Datum / date
+### Datum | date
 
 - Genaues Datum: Julianisch / Gregorianisch / Hijri / Osmanischer Finanzkalender
 - Genaue Zeitspanne
 - Ungefährer Zeitraum
 
-##### Sprache und Schriftart / language and font
+### Sprache und Schriftart | language and script
 
-- Schriftartwechsel
-- Fremdsprachiger Textabschnitt
+- Schriftartwechsel: *wird nicht gebraucht*
+- Fremdsprachiger Textabschnitt: `<foreign>`
+- Handwechsel
+- *add* Sprache und Schrit angeben: `@xml:lang`, die Werte können von OpenArabicPE übernommen werden
 
-##### Textstelle indizieren / index
+### Textstelle indizieren | index
 
 - Personenindex
 - Ortsindex
 - Werkindex
 
-##### Namen kennzeichnen
+### Namen kennzeichnen
 
-- Personenname
-- Organisationsname
-- Ortsname
-- Werktitel
+- Personenname: `<persName>`
+- Organisationsname: `<orgName>`
+- Ortsname: `<placeName>`
+- Werktitel: `<title>`, potentiell innerhalb eines `<bibl>`
 - Sachbegriff
 
 ### Metadaten
