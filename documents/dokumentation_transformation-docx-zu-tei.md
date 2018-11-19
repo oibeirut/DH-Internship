@@ -1,10 +1,8 @@
 ---
-
 title: "Transformation einer .docx Datei in eine TEI P5-XML Datei"
 author: Julia Dolhoff
 editor: Till Grallert
-date: 2017-10-19
-
+date: 2018-11-19
 ---
 
 # Transformation einer .docx Datei in eine TEI P5-XML Datei
@@ -105,7 +103,7 @@ Word-Dokument in LibreOffice als RTF abspeichern und anschließend in Tustep öf
 
 # Ergebnis:
 
-### Oxygen
+## Oxygen
 
 - Metadaten aus der Word-Datei
 - Schema Validation nicht verlinkt
@@ -116,9 +114,17 @@ Word-Dokument in LibreOffice als RTF abspeichern und anschließend in Tustep öf
 - Tabellen: nicht jeder Text ist in `<p>`
 - stylesheet `<output indent ="no">` muss auf yes gestellt werden damit Text eingerückt wird (stylesheet auf github)
 
-### OxGarage
+## OxGarage (TEI_fromDOCX, v2.15.0)
 
 - Gleich wie Oxygen
+- Metadaten aus der Word-Datei
+- Schema Validation nicht verlinkt
+- Source-desc muss mit Inhalt gefüllt werden (ist noch nicht da)
+- listChange könnte ausführlicher sein (steht nicht drin was gemacht wurde)
+- Attributwerte beinhalten Leerzeichen
+- Fußnoten in ordnung
+- Tabellen: nicht jeder Text ist in `<p>`
+- stylesheet `<output indent ="no">` muss auf yes gestellt werden damit Text eingerückt wird (stylesheet auf github)
 
 
 ### Pandoc
