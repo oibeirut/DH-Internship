@@ -121,6 +121,8 @@ Word-Dokument in LibreOffice als RTF abspeichern und anschließend in Tustep öf
 - Schema Validation nicht verlinkt
 - Source-desc muss mit Inhalt gefüllt werden (ist noch nicht da)
 - listChange könnte ausführlicher sein (steht nicht drin was gemacht wurde)
+- Spracherkennung?
+    + Arabische Teile bekommen `@dir='rtl`: this *DOES NOT* validate against TEI_all
 - Attributwerte beinhalten Leerzeichen
 - Fußnoten in ordnung
 - Tabellen: nicht jeder Text ist in `<p>`
