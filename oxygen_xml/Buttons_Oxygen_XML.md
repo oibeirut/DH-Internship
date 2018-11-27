@@ -7,36 +7,37 @@ date: 2018-01-11
 ---
 
 # Buttons Oxygen XML Editor und auszuzeichnende Elemente
-
 ## Aktuelle Knöpfe im Ediarum-Interface
 
-| Button |                   deutsch                    |        english         |  Anmerkung   |    tag / attribute combinations    |
-|--------|----------------------------------------------|------------------------|--------------|------------------------------------|
-|        | Neuer Absatz                                 | new paragraph          |              | p                                  |
-|        | Zeilenumbruch                                | line break[^1]         |              | lb                                 |
-|        | Listen                                       | lists                  |              | list                               |
-|        | Tabelle                                      | table / chart          |              | table                              |
-|        | Anmerkung d. Autors                          | Author's note          |              | note (plus attribute?)             |
-|        | Zeichnung                                    | drawing / subscription |              | graphic                            |
-|        | *Folio- u. Seitenwechsel*                    | page break[^1]         | *streichen?* | pb                                 |
-|        | Unterstrichen                                | underline              |              | hi    ?                            |
-|        | Hochstellen                                  | superscript            |              |                                    |
-|        | Streichung                                   | deletion               |              | del                                |
-|        | Korrektur durch Autor                        | author's correction    |              | choice/corr ?                      |
-|        | Unsichere Lesart                             | uncertain reading      |              |                                    |
-|        | nicht entzifferbar, Schäden und Auslassungen | undecipherable         |              |                                    |
-|        | nicht entzifferbar, durchgestrichen          | undecipherable         |              |                                    |
-|        | Ergänzung                                    | supplement             |              | add                                |
-|        | Fehlendes Wort                               | missing word           |              | gap                                |
-|        | Streichung d. Bearbeiter                     | editor's deletion      |              |                                    |
-|        | Korrekturen                                  | corrections            |              |                                    |
-|        | Sachanmerkung einfügen                       |                        |              |                                    |
-|        | Verweise                                     | references             |              |                                    |
-|        | Datum                                        | date                   |              | date                               |
-|        | Sprache und Schriftart                       | language and font      |              |                                    |
-|        | Textstellen indizieren                       | index                  |              |                                    |
-|        | Namen kennzeichnen                           |                        |              | name, persName, placeName, orgName |
-|        |                                              |                        |              |                                    |
+![Ediarum toolbar in oXygen](toolbar_oxygen.jpg)
+
+|                   deutsch                    |        english         |  Anmerkung   |    tag / attribute combinations    |
+|----------------------------------------------|------------------------|--------------|------------------------------------|
+| Neuer Absatz                                 | new paragraph          |              | p                                  |
+| Zeilenumbruch                                | line break[^1]         |              | lb                                 |
+| Listen                                       | lists                  |              | list                               |
+| Tabelle                                      | table / chart          |              | table                              |
+| Anmerkung d. Autors                          | Author's note          |              | note (plus attribute?)             |
+| Zeichnung                                    | drawing / subscription |              | graphic                            |
+| *Folio- u. Seitenwechsel*                    | page break[^1]         | *streichen?* | pb                                 |
+| Unterstrichen                                | underline              |              | hi    ?                            |
+| Hochstellen                                  | superscript            |              |                                    |
+| Streichung                                   | deletion               |              | del                                |
+| Korrektur durch Autor                        | author's correction    |              | choice/corr ?                      |
+| Unsichere Lesart                             | uncertain reading      |              |                                    |
+| nicht entzifferbar, Schäden und Auslassungen | undecipherable         |              |                                    |
+| nicht entzifferbar, durchgestrichen          | undecipherable         |              |                                    |
+| Ergänzung                                    | supplement             |              | add                                |
+| Fehlendes Wort                               | missing word           |              | gap                                |
+| Streichung d. Bearbeiter                     | editor's deletion      |              |                                    |
+| Korrekturen                                  | corrections            |              |                                    |
+| Sachanmerkung einfügen                       |                        |              |                                    |
+| Verweise                                     | references             |              |                                    |
+| Datum                                        | date                   |              | date                               |
+| Sprache und Schriftart                       | language and font      |              |                                    |
+| Textstellen indizieren                       | index                  |              |                                    |
+| Namen kennzeichnen                           |                        |              | name, persName, placeName, orgName |
+|                                              |                        |              |                                    |
 
 [^1]: rather "beginning"
 
