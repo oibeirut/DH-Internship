@@ -2,7 +2,7 @@ import collections
 import string
 
 def count_letters(filename, case_sensitive=False):
-    with open(filename, 'r') as f:
+    with open(file, 'r') as f:
         text = f.read()
 
     if case_sensitive:
