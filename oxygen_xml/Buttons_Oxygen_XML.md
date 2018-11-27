@@ -9,7 +9,7 @@ date: 2018-01-11
 # Buttons Oxygen XML Editor und auszuzeichnende Elemente
 ## Aktuelle Knöpfe im Ediarum-Interface
 
-![Ediarum toolbar in oXygen](toolbar_oxygen.jpg)
+![Ediarum toolbar in oXygen](toolbar_ediarum.jpg)
 
 |                   deutsch                    |        english         |  Anmerkung   |    tag / attribute combinations    |
 |----------------------------------------------|------------------------|--------------|------------------------------------|
