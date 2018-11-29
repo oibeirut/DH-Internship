@@ -13,7 +13,8 @@ def char_frequency(str1):
 
 # 2. read input data from file
 with open("/BachUni/BachBibliothek/GitHub/OIBeirut/bi_59/tei/bi_59-date-2018-11-12.TEIP5.xml", "r") as file:
-	text = file.read()
+	text = unicode(file.read(), "utf-8")
 # 3. run the function on a string
+frequencies1 = char_frequency(text)
 
-print(char_frequency(text))
+print(frequencies1)
