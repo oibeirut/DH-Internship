@@ -1,10 +1,10 @@
 # 1. read input data from file
 import os
-v_dir = os.path.dirname("/BachUni/BachBibliothek/GitHub/OIBeirut/bi_59/tei/")
-v_dir_output = os.path.join(v_dir, "_output/")
-v_filename = "bi_59-date-2018-11-12.TEIP5.xml"
+v_dir = os.path.dirname("/BachUni/OIB/OIBSync/DH Beauftragter/DHPraktikum/GitHub/DH-Internship/unicode_issue/")
+v_dir_output = os.path.join(v_dir, "python/_output/")
+v_filename = "sample_mixed-arabic.txt"
 with open(os.path.join(v_dir, v_filename), "r") as v_file:
-	v_text = unicode(v_file.read(), "utf-8")
+	v_text = unicode(v_file.read(), "utf-8") # at least in python 2, one has to explicitly encode somthing as Unicode
 
 # 2. define a function that 
 # counts the frequency of characters in an input string
@@ -45,6 +45,6 @@ def save_list_to_json(v_filepath, v_list):
 		json.dump(v_frequencies_1, v_output)
 
 # save output
-save_list_to_json(os.path.join(v_dir_output, "frequencies_1.json"), v_frequencies_1)
-save_list_to_json(os.path.join(v_dir_output, "frequencies_2.json"), v_frequencies_2)
+save_list_to_json(os.path.join(v_dir_output, "frequencies_characters-1.json"), v_frequencies_1)
+save_list_to_json(os.path.join(v_dir_output, "frequencies_characters-2.json"), v_frequencies_2)
 
