@@ -42,7 +42,7 @@
     </xsl:template>
     
     <!-- remove the wrapping highlight from the output -->
-    <xsl:template match="tei:hi[@dir='rtl']">
+    <xsl:template match="tei:hi[@dir='rtl']" priority="100">
         <xsl:apply-templates/>
     </xsl:template>
     
@@ -51,6 +51,14 @@
         <xsl:attribute name="xml:lang">
             <xsl:value-of select="'ar'"/>
         </xsl:attribute>
+    </xsl:template>
+    
+    <!-- add @xml:lang to all nodes missing this attribute -->
+    <xsl:template match="node()[not(self::tei:hi[@dir='rtl'])][not(child::tei:hi[@dir='rtl'])]">
+        <xsl:copy>
+            <xsl:attribute name="xml:lang" select="'en'"/>
+            <xsl:apply-templates select="@* | node()"/>
+        </xsl:copy>
     </xsl:template>
     
     <!-- generate documentation of change -->
