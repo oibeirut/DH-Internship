@@ -31,7 +31,7 @@ date: 2018-01-11
 | Fehlendes Wort                               | missing word           |              | gap                                |
 | Streichung d. Bearbeiter                     | editor's deletion      |              |                                    |
 | Korrekturen                                  | corrections            |              |                                    |
-| Sachanmerkung einfügen                       |                        |              |                                    |
+| Sachanmerkung einfügen                       | add notation           |              |                                    |
 | Verweise                                     | references             |              |                                    |
 | Datum                                        | date                   |              | date                               |
 | Sprache und Schriftart                       | language and font      |              |                                    |
@@ -113,14 +113,14 @@ date: 2018-01-11
 
 - Digitalisate
 - Beschreibung des Manuskripts
-- Überlieferung: Druck
-- Überlieferung: Abschrift, Entwurf...
+- Überlieferung: Druck | written record: print
+- Überlieferung: Abschrift, Entwurf... | 
 - Textgrundlage auswählen/abwählen
 - Autor des Manuskripts
 - Schreibort
 - Genaues Erstellungsdatum
 - Erstellungszeitspanne
-- Ungefährer Entstehungszeitraum
+- Ungefährer Entstehungszeitraum | approximate manufacturing period
 - Anmerkung zum Text
 - Schlagwort / Thema
 - Herausgeber 
