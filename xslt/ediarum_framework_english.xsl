@@ -6,14 +6,15 @@
     
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
     
-    <!-- xslt-Stylesheet to map attribute @dir to @lang="ar" -->
+    <!-- xslt-Stylesheet to resort the descriptive strings in an oXygen framework based on their @xml:lang value -->
     <!-- author(s): Lena Hofmann, 2018 -->
     
     <xsl:param name="p_editor">
-        <tei:persName xml:id="pers_JD">Lena Hofmann</tei:persName>
+        <tei:persName xml:id="pers_LH">Lena Hofmann</tei:persName>
     </xsl:param>
     
     <!-- Parameter festlegen -->
+    <xsl:param name="p_lang" select="'en'"/>
     
     <!-- reproduce everything with identity transform -->
     <xsl:template match="@* | node()">
@@ -22,12 +23,12 @@
         </xsl:copy>
     </xsl:template>
     
-    <!--choose! -->
+    <!-- Resort without deleting anyting -->
     <xsl:template match="field[count(String)&gt;1]">
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
-            <xsl:apply-templates select="String[@xml:lang='en']"/>    
-            <xsl:apply-templates select="node()[not(self::String[@xml:lang='en'])]"/>
+            <xsl:apply-templates select="String[@xml:lang = $p_lang]"/>    
+            <xsl:apply-templates select="node()[not(self::String[@xml:lang = $p_lang)]"/>
         </xsl:copy>    
     </xsl:template>
     
