@@ -28,7 +28,7 @@
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
             <xsl:apply-templates select="String[@xml:lang = $p_lang]"/>    
-            <xsl:apply-templates select="node()[not(self::String[@xml:lang = $p_lang)]"/>
+            <xsl:apply-templates select="node()[not(self::String[@xml:lang = $p_lang])]"/>
         </xsl:copy>    
     </xsl:template>
     
