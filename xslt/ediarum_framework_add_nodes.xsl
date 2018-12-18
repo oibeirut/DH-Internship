@@ -6,7 +6,7 @@
     
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
     
-    <!-- xslt-Stylesheet to map attribute @dir to @lang="ar" -->
+    <!-- this stylesheet assignes @xml:lang='de' attttibutes to existing <String> children of some names and adds sibling <String xml:lang="en"/> node -->
     <!-- author(s): Lena Hofmann, 2018 -->
     
     <xsl:param name="p_editor">
